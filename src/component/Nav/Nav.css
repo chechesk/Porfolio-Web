@@ -1,0 +1,96 @@
+/* Estilos generales del menú de navegación */
+.nav {
+  justify-content: space-between; /* Espaciado entre los dos menús */
+  align-items: center; /* Alineación vertical en el centro */
+  padding: 10px 20px; /* Espaciado interno */
+  display: flex;
+}
+
+/* Estilos para el menú de navegación en pantallas grandes */
+.nav__large {
+  display: block; /* Mostrar este menú en pantallas grandes */
+}
+
+/* Estilos para los elementos de la lista (botones) en pantallas grandes */
+.nav__large ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav__large li {
+  margin: 0;
+  padding: 0;
+  
+}
+
+.nav__large li a {
+  text-decoration: none;
+  color: #fff; /* Color de texto por defecto */
+  padding: 10px 20px; /* Espaciado interno horizontal y vertical */
+  transition: background-color 0.3s ease; /* Transición de color de fondo */
+}
+
+/* Cambio de color de fondo al hacer hover en pantallas grandes */
+.nav__large li a:hover {
+  background-color: #fff; /* Color de fondo al hacer hover */
+  color: #000; /* Color de texto al hacer hover */
+}
+
+/* Estilo para el elemento activo en pantallas grandes (puede ser diferente) */
+.nav__large li a.active {
+  background-color: #000; /* Color de fondo cuando está activo */
+  color: #fff; /* Color de texto cuando está activo */
+
+}
+
+/* Estilos para el menú hamburguesa en dispositivos móviles */
+.nav__mobile {
+  display: none; /* Ocultar este menú por defecto en pantallas grandes */
+}
+
+/* Estilos para el botón hamburguesa en dispositivos móviles */
+.nav__mobile .menu-content {
+  display: block;
+  cursor: pointer;
+}
+
+/* Estilos para los elementos de la lista (botones) en dispositivos móviles */
+.nav__mobile ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Apilar elementos verticalmente en dispositivos móviles */
+}
+
+.nav__mobile li {
+  margin: 0;
+  padding: 0;
+}
+
+.nav__mobile li a {
+  text-decoration: none;
+  color: #fff; /* Color de texto por defecto */
+  padding: 10px 20px; /* Espaciado interno horizontal y vertical */
+  transition: background-color 0.3s ease; /* Transición de color de fondo */
+}
+
+/* Cambio de color de fondo al hacer hover en dispositivos móviles */
+.nav__mobile li a:hover {
+  background-color: #fff; /* Color de fondo al hacer hover */
+  color: #000; /* Color de texto al hacer hover */
+}
+
+/* Mostrar el menú hamburguesa en dispositivos móviles con una media query */
+@media (max-width: 768px) {
+  .nav__mobile {
+    display: block;
+  }
+
+  /* Ocultar el menú de navegación en pantallas pequeñas */
+  .nav__large {
+    display: none;
+  }
+}
