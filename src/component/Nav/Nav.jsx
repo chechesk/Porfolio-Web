@@ -1,10 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Nav.css'
+import { useDarkMode } from '../Config/DarkZone';
 
 function Nav() {
+  const { isDarkMode, toggleDarkMode } = useDarkMode();
+
   return (
-    <nav>
+    <nav className='Nav'>
+       {/* <button onClick={toggleDarkMode}>
+        {isDarkMode ? 'Modo Claro' : 'Modo Oscuro'}
+      </button> */}
       <ul>
         <li>
           <Link to="/">Inicio</Link>
