@@ -7,6 +7,7 @@ import Project from './component/Project/Project'
 import Skill from './component/Skill/Skill'
 import Contact from './component/Contact/Contact'
 import { DarkModeProvider, useDarkMode } from './component/Config/DarkZone'
+import Detail from './component/Detail/Detail'
 
 function App() {
   const { isDarkMode, toggleDarkMode  } = useDarkMode();
@@ -37,6 +38,7 @@ function App() {
       <Route path='/' Component={Home} />
       <Route path='/about' Component={About} />
       <Route path='/projects' Component={Project} />
+      <Route path='/projects/:id' Component={Detail} />
       <Route path='/skills' Component={Skill} />
       <Route path='/contact' Component={Contact} />
     </Routes>

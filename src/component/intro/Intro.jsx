@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import img from '../../assets/1684808450050.jpeg'
+import './intro.css'
+import Social from '../Social/social'
 
 export default class Intro extends Component {
   render() {
@@ -6,13 +9,18 @@ export default class Intro extends Component {
         <div className="mi-componente">
         <div className="contenido">
           <div>
-            <h1>Título</h1>
-            <h2>Subtítulo</h2>
+            <h2>Full Stack Developers</h2>
+            <h2>MERS</h2>
+           <ul>M - MongoDB</ul>
+           <ul>E - ExpressJS</ul>
+           <ul>R - ReactJS</ul>
+           <ul>N - NodeJS</ul>
+            <Social/>
           </div>
         </div>
-        <div className="imagen">
-          <img
-            src="tu_imagen.jpg"
+        <div className="avatar">
+          <img className="imagen"
+            src={img}
             alt="Imagen"
           />
         </div>

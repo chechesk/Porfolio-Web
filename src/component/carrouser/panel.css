@@ -1,0 +1,12 @@
+.carousel{
+padding-left: 10%;
+padding-right: 10%;
+width: 100%;
+}
+.container{
+    display: flex;
+    flex-direction:row;
+    align-content: center;
+    padding-bottom: 25px;
+    
+}
