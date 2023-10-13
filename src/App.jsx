@@ -21,7 +21,7 @@ function App() {
     <DarkModeProvider>
     <div className={`App ${isDarkMode ? 'dark' : 'light'}`}>
     <header>
-      <h1><img src="src/assets/Logo.fw.png" alt="My Image" className='logo'></img></h1>
+      <h1><img src="https://cyberzon3.com/img/Logo.fw.png" alt="My Image" className='logo'></img></h1>
       <label className="ui-switch">
       <input
         type="checkbox"

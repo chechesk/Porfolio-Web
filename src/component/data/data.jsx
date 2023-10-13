@@ -76,7 +76,7 @@ const cardsData  = [
     id: 6,
     nombre: 'Wordpress H2-LATAMSUMMIT',
     descripcion: 'event development company in Cacino and Metaverses, with the standards of the regulatory federation',
-    imagen: " src/assets/h2-latam.png",
+    imagen: " https://cyberzon3.com/img/h2-latam.png",
     URL: "https://h2-latamsummit.com/",
     point: '5',
     tecnologies: [
