@@ -1,4 +1,12 @@
 /*  */
+body {
+  margin: 0;
+  font-family: "Figtree", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+ 
+} 
+
 .articles {
   display: grid;
   grid-column: auto;
@@ -19,7 +27,7 @@ article {
     position: relative;
     border-radius: 16px;
     box-shadow: none;
-    background: #fff;
+
     transform-origin: center;
     transition: all 0.4s ease-in-out;
     overflow: hidden;
@@ -109,13 +117,7 @@ article {
     box-sizing: border-box;
   }
   
-  body {
-    margin: 0;
-    font-family: "Figtree", sans-serif;
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-    min-height: 100vh;
-  }
+
   
   
 /* Rating de estrellas de las card */

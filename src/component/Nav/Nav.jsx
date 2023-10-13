@@ -3,10 +3,13 @@ import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
 import { useDarkMode } from '../Config/DarkZone';
 import './Nav.css';
+import BotonDZ from '../Config/DarkZoneSwitch';
+import LanguageSwitcher from '../Config/LanguageSwitcher';
 
-const Nav = ({t}) => {
+const Nav = ({ t }) => {
   const { isDarkMode } = useDarkMode();
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
@@ -16,11 +19,39 @@ const Nav = ({t}) => {
     setIsNavOpen(false);
   };
 
+  // Agregar un event listener para controlar el scroll y actualizar el estado 'isSticky'
+  useEffect(() => {
+    let timer;
+    
+    const handleScroll = () => {
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        if (window.scrollY > 0) {
+          setIsSticky(true);
+        } else {
+          setIsSticky(false);
+        }
+      }, 100); // Espera 100 milisegundos después del último evento de scroll para actualizar la clase.
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Remover el event listener al desmontar el componente
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <nav className={`nav ${isNavOpen ? 'nav-open' : ''}`}>
+    <nav className={`nav ${isSticky ? 'sticky' : ''} ${isNavOpen ? 'nav-open' : ''}`}>
       {/* Contenido para pantallas grandes */}
+      
+      {/* <h1><img src="https://www.cyberzon3.com/img/Logo.fw.png" alt="My Image" className='logo'></img></h1>
+    <BotonDZ/>
+    
+    <LanguageSwitcher/> */}
       <div className="nav__large">
+        
         <ul className="nav__link">
           <li>
             <Link to="/" onClick={closeNav}>{t('navbar:home')}</Link>

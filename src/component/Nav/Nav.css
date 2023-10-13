@@ -1,15 +1,29 @@
-/* Estilos generales del menú de navegación */
+/* Estilos para la barra de navegación fija */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 65px;
+  z-index: 100;
+  opacity: 52%;
+  color: #000;
+  background-color: #1d1717 ; /* Cambia el color de fondo al ser fija */
+  /* Otros estilos de la barra de navegación fija */
+}
+
 .nav {
+  display: flex;
   justify-content: space-between; /* Espaciado entre los dos menús */
   align-items: center; /* Alineación vertical en el centro */
   padding: 10px 20px; /* Espaciado interno */
   display: flex;
 }
 
-/* Estilos para el menú de navegación en pantallas grandes */
-.nav__large {
-  display: block; /* Mostrar este menú en pantallas grandes */
-}
+.nav__link {
+  display: flex;
+  justify-content:space-around;
+  
+} 
 
 /* Estilos para los elementos de la lista (botones) en pantallas grandes */
 .nav__large ul {

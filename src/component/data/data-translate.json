@@ -41,7 +41,8 @@
       }
     },
     "Contact": {
-      "descripcion  ": "I am a developer who likes to face new challenges to learn based on the implementation to be carried out."
+      "title":"About Me",
+      "descripcion": "I am a developer who likes to face new challenges to learn based on the implementation to be carried out."
     },
     "navbar": {
       "home": "Home",
@@ -98,6 +99,10 @@
       "skill": "Habilidades",
       "projects": "Proyectos",
       "contact": "Contacto"
+    },
+    "Contact": {
+      "title":"Sobre Me",
+      "descripcion": "Soy un desarrollador al que le gusta afrontar nuevos retos para aprender en base a la implementación a realizar."
     }
   }
 }

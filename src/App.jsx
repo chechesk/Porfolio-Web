@@ -34,9 +34,9 @@ function App() {
       <Route path='/skills' Component={Skill} />
       <Route path='/contact' Component={Contact} />
       <Route exact path='*' Component={NotFound}/>
-      
+
     </Routes>
-    <Footer/>
+    
     </div>
     </DarkModeProvider>
   )

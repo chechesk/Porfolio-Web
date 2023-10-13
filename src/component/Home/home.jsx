@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import Intro from '../intro/Intro'
 import Carousel from '../carrouser/panel'
-import Contact from '../Contact/Contact'
 import Skill from '../Skill/Skill'
 import Project from '../Project/Project'
 import About from '../About/About'
+import Footer from '../Footer/Footer'
 
 export default class home extends Component {
   render() {
@@ -15,7 +15,7 @@ export default class home extends Component {
        <About/>
        <Skill/>
        <Project/>
-       <Contact/>
+       <Footer/>
       </div>
     )
   }

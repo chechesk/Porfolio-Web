@@ -1,3 +1,5 @@
+
+
 .ui-switch {
     /* switch */
     --switch-bg: rgb(255, 255, 255);
@@ -81,26 +83,4 @@
     height: 0;
   }
 
-  
-.logo {
-    padding-left: 25px;
-    width: 190px;
-    height: 70px;
-  }
-  h1{
-    text-decoration: solid;
-    color: rgb(13, 14, 14);
-  }
-  
-  .light {
-    background-color: rgb(211, 211, 211);
-    color: black;
-  }
-  
-  /* Estilos para el Modo Oscuro */
-  .dark {
-    background-color: black;
-    color: white;
-  
-  }
   

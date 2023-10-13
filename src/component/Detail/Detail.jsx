@@ -16,7 +16,7 @@ function CardDetail({ cardsData, t }) {
     <div className="container-about">
       <div className="">
         <h2>{t(`cards:${selectedCard.id}.nombre`)}</h2>
-        <img src={selectedCard.imagen} alt="imagenDetalle" className="imagenDetalle" />
+        <img src={selectedCard.imagen} alt="Imagen" className="imagDet" />
         <p>{t(`cards:${selectedCard.id}.descripcion`)}</p>
         <ol>
           {selectedCard.tecnologies.map((tech) => (

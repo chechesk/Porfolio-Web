@@ -7,6 +7,7 @@ header{
   background-color: rgb(152, 152, 153);
 }
 
+
 .logo {
   padding-left: 25px;
   width: 190px;
@@ -25,7 +26,7 @@ h1{
 /* Estilos para el Modo Oscuro */
 .dark {
   background-color: black;
-  color: white;
+  color: rgb(211, 211, 211);
 
 }
 
