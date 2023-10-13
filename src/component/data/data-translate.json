@@ -39,11 +39,14 @@
         "nombre": "Wordpress H2-LATAMSUMMIT",
         "descripcion": "event development company in Cacino and Metaverses, with the standards of the regulatory federation"
       }
+    },
+    "Contact": {
+      "descripcion  ": "I am a developer who likes to face new challenges to learn based on the implementation to be carried out."
     }
   },
   "es": {
     "about": {
-      "title": "Acerca de",
+      "title": "Acerca",
       "description": "Como desarrollador full stack, mi experiencia y conocimiento se extienden por una amplia gama de tecnologías y herramientas. En el lado del frontend, React es mi elección preferida para desarrollar interfaces de usuario modernas y altamente interactivas. En cuanto a la arquitectura, me inclino hacia el enfoque de microservicios.",
       "summary": "En resumen, como desarrollador full stack con experiencia en MongoDB, Node.js, Express, React, JWT, microservicios y Docker..."
     },

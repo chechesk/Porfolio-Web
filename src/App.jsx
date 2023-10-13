@@ -11,6 +11,7 @@ import CardDetail from './component/Detail/Detail'
 import cardsData from './component/data/data'
 import NotFound from './component/404/404'
 import LanguageSwitcher from './component/Config/LanguageSwitcher'
+import Footer from './component/Footer/Footer'
 
 function App() {
   const { isDarkMode, toggleDarkMode  } = useDarkMode();
@@ -21,7 +22,7 @@ function App() {
     <DarkModeProvider>
     <div className={`App ${isDarkMode ? 'dark' : 'light'}`}>
     <header>
-      <h1><img src="https://cyberzon3.com/img/Logo.fw.png" alt="My Image" className='logo'></img></h1>
+      <h1><img src="https://www.cyberzon3.com/img/Logo.fw.png" alt="My Image" className='logo'></img></h1>
       <label className="ui-switch">
       <input
         type="checkbox"
@@ -45,6 +46,7 @@ function App() {
       <Route exact path='*' Component={NotFound}/>
       
     </Routes>
+    <Footer/>
     </div>
     </DarkModeProvider>
   )

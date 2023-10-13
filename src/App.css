@@ -3,13 +3,14 @@ header{
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
-  background-color: rgb(45, 46, 94);
+  padding: auto;
+  background-color: rgb(152, 152, 153);
 }
 
 .logo {
-  width: 250px;
-  height: 90px;
+  padding-left: 15px;
+  width: 190px;
+  height: 70px;
 }
 h1{
   text-decoration: solid;
@@ -31,12 +32,12 @@ h1{
 
 .ui-switch {
   /* switch */
-  --switch-bg: rgb(135, 150, 165);
+  --switch-bg: rgb(255, 255, 255);
   --switch-width: 48px;
   --switch-height: 20px;
   /* circle */
   --circle-diameter: 32px;
-  --circle-bg: rgb(0, 56, 146);
+  --circle-bg: rgb(6, 14, 25);
   --circle-inset: calc((var(--circle-diameter) - var(--switch-height)) / 2);
 }
 

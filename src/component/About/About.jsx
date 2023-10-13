@@ -7,7 +7,7 @@ class About extends Component {
     const { t } = this.props;
 
     return (
-      <div className='containers'>
+      <div className='container-about'>
         <h2>{t('about:title')}</h2>
         <div className='cover'>
           <p>{t('about:description')}</p>

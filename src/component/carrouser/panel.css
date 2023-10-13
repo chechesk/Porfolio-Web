@@ -1,19 +1,20 @@
 
 .container{
-    padding-left: 15rem;
     display: flex;
     flex-direction:column;
     align-content: center;
     padding-bottom: 25px;
-    
+    /* background-color: rgb(211 211 211) */
 }
 .carousel{
-
-    width: 90%;
+  padding-left: 45px;
+  padding-right: 45px;
+    width: 100%;
     }
 .IMG {
     max-width: 70px;
     max-height:  70px;
+    
 }
 @media (max-width: 800px) {
     .container{
