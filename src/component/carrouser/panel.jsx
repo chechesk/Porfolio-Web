@@ -17,18 +17,34 @@ const technologies = [
   { id: 10, nombre: "RESTful APIs", imagen: "https://lh3.googleusercontent.com/-XvJzhz3pfH0/XjYG_xWkESI/AAAAAAAAJ9c/AYlgAtRknEU2W5fMcFhQoL6rmO8EBtIDQCK8BGAsYHg/s0/2020-02-01.png" },
   { id: 11, nombre: "Git", imagen: "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" },
   { id: 12, nombre: "GitHub", imagen: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" },
-  { id: 13, nombre: "Redux", imagen: "https://assets.stickpng.com/images/5848309bcef1014c0b5e4a9a.png" },
+  { id: 13, nombre: "Redux", imagen: "https://banner2.cleanpng.com/20180511/zie/kisspng-redux-react-javascript-vue-js-single-page-applicat-5af5cde3d3a5e8.2671715915260584678669.jpg" },
   // Agrega aquí más tecnologías con sus respectivas imágenes
 ];
 
+const CustomPrevArrow = (props) => (
+  <div {...props} className="custom-prev-arrow">
+    Prev
+  </div>
+);
+
+const CustomNextArrow = (props) => (
+  <div {...props} className="custom-next-arrow">
+    Next
+  </div>
+);
+
 const Carousel = () => {
   const settings = {
+    showArrows:true,
     dots: true,
     infinite: true,
-    speed: 700,
+    speed: 800,
     slidesToShow: 4,
     slidesToScroll: 1,
-  };
+    autoplay: true,
+    autoplaySpeed: 2000, 
+    
+   };
 
   return (
     <div className='container'>
@@ -37,11 +53,10 @@ const Carousel = () => {
       <Slider {...settings}>
         {technologies.map((tech) => (
           <div key={tech.id}>
-            <h3>{tech.nombre}</h3>
-            <img
+            <h3 className='H3'>{tech.nombre}</h3>
+            <img className='IMG'
               src={tech.imagen}
               alt={tech.nombre}
-              style={{ maxWidth: '70px', maxHeight: '70px' }}
             />
           </div>
         ))}

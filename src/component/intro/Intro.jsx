@@ -9,6 +9,7 @@ export default class Intro extends Component {
         <div className="mi-componente">
         <div className="contenido">
           <div>
+            <h2>Jose Gregorio Romero Mendoza</h2>
             <h2>Full Stack Developers</h2>
             <h2>MERS</h2>
            <ul>M - MongoDB</ul>

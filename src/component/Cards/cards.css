@@ -1,0 +1,12 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Para distribuir las tarjetas uniformemente en cada fila */
+    margin: -5px; /* Espaciado entre las tarjetas */
+}
+
+.card-link {
+    text-decoration: none;
+    color: black;
+    text-shadow: 1pm currentColor;
+}

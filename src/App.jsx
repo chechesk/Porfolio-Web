@@ -7,7 +7,10 @@ import Project from './component/Project/Project'
 import Skill from './component/Skill/Skill'
 import Contact from './component/Contact/Contact'
 import { DarkModeProvider, useDarkMode } from './component/Config/DarkZone'
-import Detail from './component/Detail/Detail'
+import CardDetail from './component/Detail/Detail'
+import cardsData from './component/data/data'
+import NotFound from './component/404/404'
+
 
 function App() {
   const { isDarkMode, toggleDarkMode  } = useDarkMode();
@@ -18,7 +21,7 @@ function App() {
     <DarkModeProvider>
     <div className={`App ${isDarkMode ? 'dark' : 'light'}`}>
     <header>
-      <h1>Portafolio</h1>
+      <h1><img src="src/assets/Logo.fw.png" alt="My Image" className='logo'></img></h1>
       <label className="ui-switch">
       <input
         type="checkbox"
@@ -38,9 +41,11 @@ function App() {
       <Route path='/' Component={Home} />
       <Route path='/about' Component={About} />
       <Route path='/projects' Component={Project} />
-      <Route path='/projects/:id' Component={Detail} />
+      <Route path="/projects/:id" element={<CardDetail cardsData={cardsData} />} />
       <Route path='/skills' Component={Skill} />
       <Route path='/contact' Component={Contact} />
+      <Route exact path='*' Component={NotFound}/>
+      
     </Routes>
     </div>
     </DarkModeProvider>

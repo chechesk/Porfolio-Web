@@ -1,4 +1,10 @@
+.card {
+  flex: 0 0 calc(33.33% - 10px); /* Tamaño de cada tarjeta (33.33% para tres tarjetas por fila) */
+  margin: 10px; /* Espaciado entre las tarjetas */
+}
+
 article {
+  height: 550px;
     --img-scale: 1.001;
     --title-color: black;
     --link-icon-translate: -20px;
@@ -12,7 +18,8 @@ article {
     overflow: hidden;
     background: linear-gradient(#212121, #212121) padding-box,
     linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
-border: 2px solid transparent;
+    border: 2px solid transparent;
+    
   }
   
   article a::after {
@@ -21,6 +28,7 @@ border: 2px solid transparent;
     inset-inline: 0;
     cursor: pointer;
     content: "";
+    
   }
   
   /* basic article elements styling */
@@ -41,6 +49,7 @@ border: 2px solid transparent;
   }
   
   article img {
+    padding-top: 5%;
     max-width: 100%;
     transform-origin: center;
     transform: scale(var(--img-scale));
@@ -49,6 +58,7 @@ border: 2px solid transparent;
   
   .article-body {
     padding: 24px;
+    
   }
   
   article a {
@@ -107,6 +117,7 @@ border: 2px solid transparent;
     padding-inline: 24px;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 24px;
+    
   }
   
   @media screen and (max-width: 960px) {
@@ -148,3 +159,31 @@ border: 2px solid transparent;
     white-space: nowrap; 
     width: 1px;
   }
+
+  .rating {
+    display: inline-block;
+  }
+  
+  .rating input {
+    display: none;
+  }
+  
+  .rating label {
+    float: right;
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.3s;
+  }
+  
+  .rating label:before {
+    content: '\2605';
+    font-size: 30px;
+  }
+  
+  .rating input:checked ~ label,
+  .rating label:hover,
+  .rating label:hover ~ label {
+    color: #6f00ff;
+    transition: color 0.3s;
+  }
+  

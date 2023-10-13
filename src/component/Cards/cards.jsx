@@ -1,75 +1,42 @@
 import React from "react";
-import Card from "../Card/Cardd";
-//import { Link } from "react-router-dom";
+import CardModel from "../Card/Cardd";
+import { Link } from "react-router-dom";
+import './cards.css'
+import CardDetail from "../Detail/Detail";
+import cardsData from "../data/data";
 
 
-const data = [
-    {
-      id: 1,
-      nombre: 'Wordpress',
-      descripcion: ' ',
-      imagen: "{Food}",
-      point: '3',
-      tecnologies: [
-        { id: 1, nombre: 'Cpanel-Hosting' },
-        { id: 2, nombre: 'Webmail' },
-        { id: 3, nombre: 'Dominio' },
-      ],
-    },
-    {
-      id: 2,
-      nombre: 'Project Individuality Food',
-      descripcion: ' apply the technologies learned in the bootcamps with nodejs, express, react, redux, sequelize, css.',
-      imagen: "{Food}",
-      tecnologies: [
-        { id: 1, nombre: 'Express' },
-        { id: 2, nombre: 'Sequelize' },
-        { id: 3, nombre: 'Redux' },
-        { id: 4, nombre: 'React' },
-        { id: 5, nombre: 'Nodejs' },
-        { id: 6, nombre: 'JavaScript' },
-      ],
-    },
-    {
-      id: 3,
-      nombre: 'Cyberzon3',
-      descripcion: 'travel e-commerce integration project.',
-      imagen: "{Cyberzon3}",
-      tecnologies: [
-        { id: 1, nombre: 'Express' },
-        { id: 2, nombre: 'MongoDB' },
-        { id: 3, nombre: 'Redux' },
-        { id: 4, nombre: 'React' },
-        { id: 5, nombre: 'Nodejs' },
-        { id: 6, nombre: 'JavaScript' },
-      ],
-    },
-  ];
+
 
 export default function Cards  (){
+  const [selectedCard, setSelectedCard] = React.useState(null);
 
-    <div className="CardsContainer">
-    {data?.map((p)=>{
-        //console.log(data);
-        return(
+  const handleCardSelect = (card) => {
+    setSelectedCard(card);
+  };
 
-            <div className="" key={p.id} >
-            {/* <Link to={"/home/"+p.id }> */}
-                <Card className="card"
-                                    id = {p.id} 
-                                    key = {p.id}
-                                    nombre = {p.nombre}
-                                    imagen = {p.imagen}
-                                    descripcion = {p.descripcion}
-                                    tecnologies = {p.tecnologies}
-                                    point = {p.point}
-                               
-                                    />
-                      
-            {/* </Link> */}
-        </div>
+return(
+  <div className="card-container">
+    <section id="projects"/>
+      <div className="articles">
+        {cardsData.map((card) => (
+          <div key={card.id} onClick={() => handleCardSelect(card)}>
+            <Link to={`/projects/${card.id}`} key={card.id} className="card-link">
+            <CardModel
+              className=""
+              key={card.id}
+              id={card.id}
+              nombre={card.nombre}
+              descripcion={card.descripcion}
+              imagen={card.imagen}
+              point={card.point}
+              tecnologies={card.tecnologies}
+            />
+            </Link>
+          </div>
+        ))}
+      </div>
+      {selectedCard && <CardDetail card={selectedCard} />}
+    </div>
     )
-    })}
-       </div>
-    
 }
