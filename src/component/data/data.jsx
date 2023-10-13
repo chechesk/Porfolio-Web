@@ -2,7 +2,7 @@ const cardsData  = [
     {
       id: 1,
       nombre: 'Wordpress',
-      descripcion: 'Diseño de paginas no-code, con elementor pro, configuracion de email de registro de formulario de contacto',
+      descripcion: 'No-code page design, with Elementor Pro, contact form registration email configuration',
       imagen: "https://picsum.photos/id/1011/800/450",
       point: '3',
       tecnologies: [

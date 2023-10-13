@@ -1,0 +1,86 @@
+{
+  "en": {
+    "about": {
+      "title": "About",
+      "description": "As a full-stack developer, my experience and knowledge span a wide range of technologies and tools, allowing me to tackle projects from start to finish. On the frontend side, React is my preferred choice for developing modern and highly interactive user interfaces. Regarding architecture, I lean towards the microservices approach.",
+      "summary": "In summary, as a full-stack developer with experience in MongoDB, Node.js, Express, React, JWT, microservices, and Docker..."
+    },
+    "skills": {
+      "title": "Skills"
+    },
+    "projects": {
+      "title": "Projects"
+    },
+    "developers": {
+      "title": "Full Stack Developers"
+    },
+    "cards": {
+      "1": {
+        "nombre": "Wordpress",
+        "descripcion": "No-code page design, with Elementor Pro, contact form registration email configuration"
+      },
+      "2": {
+        "nombre": "Pi Food",
+        "descripcion": "apply the technologies learned in the bootcamps with nodejs, express, react, redux, sequelize, css."
+      },
+      "3": {
+        "nombre": "Cyberzon3",
+        "descripcion": "travel e-commerce integration project."
+      },
+      "4": {
+        "nombre": "MicroService",
+        "descripcion": "implementing a docker microservice with google cloud API - CRUD"
+      },
+      "5": {
+        "nombre": "Wordpress CGSEVENTS",
+        "descripcion": "event development company in Cacino and Metaverses, with the standards of the regulatory federation"
+      },
+      "6": {
+        "nombre": "Wordpress H2-LATAMSUMMIT",
+        "descripcion": "event development company in Cacino and Metaverses, with the standards of the regulatory federation"
+      }
+    }
+  },
+  "es": {
+    "about": {
+      "title": "Acerca de",
+      "description": "Como desarrollador full stack, mi experiencia y conocimiento se extienden por una amplia gama de tecnologías y herramientas. En el lado del frontend, React es mi elección preferida para desarrollar interfaces de usuario modernas y altamente interactivas. En cuanto a la arquitectura, me inclino hacia el enfoque de microservicios.",
+      "summary": "En resumen, como desarrollador full stack con experiencia en MongoDB, Node.js, Express, React, JWT, microservicios y Docker..."
+    },
+    "skills": {
+      "title": "Habilidades"
+    },
+    "projects": {
+      "title": "Proyectos"
+    },
+    "developers": {
+      "title": "Desarrolladores Full Stack"
+    },
+    "cards": {
+      "1": {
+        "nombre": "Wordpress",
+        "descripcion": "Diseño de páginas sin código, con Elementor Pro, configuración de registro de formulario de contacto por correo electrónico"
+      },
+      "2": {
+        "nombre": "Pi Food",
+        "descripcion": "aplicar las tecnologías aprendidas en los bootcamps con nodejs, express, react, redux, sequelize, css."
+      },
+      "3": {
+        "nombre": "Cyberzon3",
+        "descripcion": "proyecto de integración de comercio electrónico de viajes."
+      },
+      "4": {
+        "nombre": "MicroService",
+        "descripcion": "implementación de un microservicio de Docker con la API de Google Cloud - CRUD"
+      },
+      "5": {
+        "nombre": "Wordpress CGSEVENTS",
+        "descripcion": "empresa de desarrollo de eventos en Cacino y Metaversos, con los estándares de la federación regulatoria"
+      },
+      "6": {
+        "nombre": "Wordpress H2-LATAMSUMMIT",
+        "descripcion": "empresa de desarrollo de eventos en Cacino y Metaversos, con los estándares de la federación regulatoria"
+      }
+    }
+  }
+}

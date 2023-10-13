@@ -10,7 +10,7 @@ import { DarkModeProvider, useDarkMode } from './component/Config/DarkZone'
 import CardDetail from './component/Detail/Detail'
 import cardsData from './component/data/data'
 import NotFound from './component/404/404'
-
+import LanguageSwitcher from './component/Config/LanguageSwitcher'
 
 function App() {
   const { isDarkMode, toggleDarkMode  } = useDarkMode();
@@ -32,9 +32,7 @@ function App() {
         <div className="circle"></div>
       </div>
     </label>
-      {/* <button onClick={toggleDarkMode}>
-        {isDarkMode ? 'Modo Claro' : 'Modo Oscuro'}
-      </button> */}
+    <LanguageSwitcher/>
      <Nav/>
     </header>
     <Routes>
