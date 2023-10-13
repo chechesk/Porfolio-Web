@@ -42,6 +42,13 @@
     },
     "Contact": {
       "descripcion  ": "I am a developer who likes to face new challenges to learn based on the implementation to be carried out."
+    },
+    "navbar": {
+      "home": "Home",
+      "about": "About",
+      "skill": "Skill",
+      "projects": "Project",
+      "contact": "Contact"
     }
   },
   "es": {
@@ -84,6 +91,13 @@
         "nombre": "Wordpress H2-LATAMSUMMIT",
         "descripcion": "empresa de desarrollo de eventos en Cacino y Metaversos, con los estándares de la federación regulatoria"
       }
+    },
+    "navbar": {
+      "home": "Inicio",
+      "about": "Quien Soy",
+      "skill": "Habilidades",
+      "projects": "Proyectos",
+      "contact": "Contacto"
     }
   }
 }

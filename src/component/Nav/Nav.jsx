@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import './Nav.css';
+import { withTranslation } from 'react-i18next';
 import { useDarkMode } from '../Config/DarkZone';
+import './Nav.css';
 
-const Nav = () => {
+const Nav = ({t}) => {
   const { isDarkMode } = useDarkMode();
   const [isNavOpen, setIsNavOpen] = useState(false);
 
@@ -22,19 +23,19 @@ const Nav = () => {
       <div className="nav__large">
         <ul className="nav__link">
           <li>
-            <Link to="/" onClick={closeNav}>Inicio</Link>
+            <Link to="/" onClick={closeNav}>{t('navbar:home')}</Link>
           </li>
           <li>
-            <Link to="/about" onClick={closeNav}>Acerca de Mí</Link>
+            <Link to="/about" onClick={closeNav}>{t('navbar:about')}</Link>
           </li>
           <li>
-            <Link to="/contact" onClick={closeNav}>Contacto</Link>
+            <Link to="/skills" onClick={closeNav}>{t('navbar:skill')}</Link>
           </li>
           <li>
-            <Link to="/projects" onClick={closeNav}>Proyectos</Link>
+            <Link to="/projects" onClick={closeNav}>{t('navbar:projects')}</Link>
           </li>
           <li>
-            <Link to="/skills" onClick={closeNav}>Habilidades</Link>
+            <Link to="/contact" onClick={closeNav}>{t('navbar:contact')}</Link>
           </li>
         </ul>
       </div>
@@ -63,4 +64,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default withTranslation()(Nav);

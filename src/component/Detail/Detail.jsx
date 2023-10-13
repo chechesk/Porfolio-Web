@@ -1,26 +1,31 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import { withTranslation } from 'react-i18next';
+import './Detail.css';
 
-export default function CardDetail({ cardsData }) {
+function CardDetail({ cardsData, t }) {
   const { id } = useParams();
   const selectedCard = cardsData.find((card) => card.id === Number(id));
+
   if (!selectedCard) {
     // Manejar el caso en que no se encuentra la tarjeta
     return <div>Tarjeta no encontrada.</div>;
   }
 
   return (
-    <div className="">
+    <div className="container-about">
       <div className="">
-        <h2>{selectedCard.nombre}</h2>
-        <img src={selectedCard.imagen} alt="imagen" style={{  width: "500px", height: "400px" }} />
-        <p>{selectedCard.descripcion}</p>
+        <h2>{t(`cards:${selectedCard.id}.nombre`)}</h2>
+        <img src={selectedCard.imagen} alt="imagenDetalle" className="imagenDetalle" />
+        <p>{t(`cards:${selectedCard.id}.descripcion`)}</p>
         <ol>
-      {selectedCard.tecnologies.map((tech) => (
-        <li key={tech.id}>{tech.nombre}</li>
-      ))}
-    </ol>
+          {selectedCard.tecnologies.map((tech) => (
+            <li key={tech.id}>{tech.nombre}</li>
+          ))}
+        </ol>
       </div>
     </div>
   );
 }
+
+export default withTranslation()(CardDetail);

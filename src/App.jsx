@@ -12,27 +12,17 @@ import cardsData from './component/data/data'
 import NotFound from './component/404/404'
 import LanguageSwitcher from './component/Config/LanguageSwitcher'
 import Footer from './component/Footer/Footer'
+import BotonDZ from './component/Config/DarkZoneSwitch'
 
 function App() {
-  const { isDarkMode, toggleDarkMode  } = useDarkMode();
 
-
-  
   return (
     <DarkModeProvider>
-    <div className={`App ${isDarkMode ? 'dark' : 'light'}`}>
+    <div className='App'>
     <header>
       <h1><img src="https://www.cyberzon3.com/img/Logo.fw.png" alt="My Image" className='logo'></img></h1>
-      <label className="ui-switch">
-      <input
-        type="checkbox"
-        checked={isDarkMode} // Marca automáticamente el interruptor según el estado del modo oscuro
-        onChange={toggleDarkMode} // Cuando se hace clic, llama a la función para alternar el modo oscuro
-      />
-      <div className="slider">
-        <div className="circle"></div>
-      </div>
-    </label>
+    <BotonDZ/>
+    
     <LanguageSwitcher/>
      <Nav/>
     </header>

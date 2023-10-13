@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { DarkModeProvider, useDarkMode } from './DarkZone'
 import './LanguageSwitcher.css'
 
 const LanguageSwitcher = () => {
