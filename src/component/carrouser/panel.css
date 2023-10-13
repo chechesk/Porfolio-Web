@@ -1,20 +1,29 @@
-.carousel{
-padding-left: 25%;
-padding-right: 10%;
-width: 100%;
-}
+
 .container{
+    padding-left: 15rem;
     display: flex;
-    flex-direction:row;
+    flex-direction:column;
     align-content: center;
     padding-bottom: 25px;
     
 }
+.carousel{
+
+    width: 90%;
+    }
 .IMG {
     max-width: 70px;
     max-height:  70px;
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
+    .container{
+        padding-left: 5rem;
+        display: flex;
+        flex-direction:column;
+        align-content: center;
+        padding-bottom: 25px;
+        
+    }
     .carousel{
         padding-left: 1rem;
         padding-right: 1rem;

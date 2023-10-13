@@ -11,6 +11,18 @@
     flex-direction: column;
     align-items: center;
 }
-@media screen {
-    
+@media (max-width: 800px) { 
+    .container {
+        width: 80%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cover {
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

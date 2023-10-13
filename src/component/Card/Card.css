@@ -1,6 +1,13 @@
-.card {
-  flex: 0 0 calc(33.33% - 10px); /* Tamaño de cada tarjeta (33.33% para tres tarjetas por fila) */
-  margin: 10px; /* Espaciado entre las tarjetas */
+/*  */
+.articles {
+  display: grid;
+  grid-column: auto;
+
+  margin-inline: auto;
+  padding-inline: 4px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 4px;
+  
 }
 
 article {
@@ -110,55 +117,8 @@ article {
     min-height: 100vh;
   }
   
-  .articles {
-    display: grid;
-    max-width: 1200px;
-    margin-inline: auto;
-    padding-inline: 24px;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 24px;
-    
-  }
   
-  @media screen and (max-width: 960px) {
-    article {
-      container: card/inline-size;
-    }
-    .article-body p {
-      display: none;
-    }
-  }
-  
-  @container card (min-width: 380px) {
-    .article-wrapper {
-      display: grid;
-      grid-template-columns: 100px 1fr;
-      gap: 16px;
-    }
-    .article-body {
-      padding-left: 0;
-    }
-    figure {
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-    }
-    figure img {
-      height: 100%;
-      aspect-ratio: 1;
-      object-fit: cover;
-    }
-  }
-  
-  .sr-only:not(:focus):not(:active) {
-    clip: rect(0 0 0 0); 
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap; 
-    width: 1px;
-  }
+/* Rating de estrellas de las card */
 
   .rating {
     display: inline-block;
@@ -187,3 +147,15 @@ article {
     transition: color 0.3s;
   }
   
+
+  @media (max-width: 800px) {
+    .articles {
+      display: grid;
+      grid-column:auto;
+      margin-inline: auto;
+      padding-inline: 4px;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 4px;
+      
+    }
+  }

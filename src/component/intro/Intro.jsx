@@ -9,13 +9,13 @@ export default class Intro extends Component {
         <div className="mi-componente">
         <div className="contenido">
           <div>
-            <h2>Jose Gregorio Romero Mendoza</h2>
-            <h2>Full Stack Developers</h2>
-            <h2>MERS</h2>
-           <ul>M - MongoDB</ul>
-           <ul>E - ExpressJS</ul>
-           <ul>R - ReactJS</ul>
-           <ul>N - NodeJS</ul>
+            <h2 className='intro'>Jose Gregorio Romero Mendoza</h2>
+            <h2 className='intro'>Full Stack Developers</h2>
+            <h2 className='intro'>MERS</h2>
+           <ul className='li'>M - MongoDB</ul>
+           <ul className='li'>E - ExpressJS</ul>
+           <ul className='li'>R - ReactJS</ul>
+           <ul className='li'>N - NodeJS</ul>
             <Social/>
           </div>
         </div>
