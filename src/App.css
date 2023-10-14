@@ -1,3 +1,17 @@
+:root {
+  --background-color-light: #b6b2b2; /* Gris claro */
+  --background-color-dark: #121212; /* Fondo oscuro */
+  --text-color-light: #333333;
+  --text-color-dark: #ffffff;
+  /* Otros estilos */
+}
+
+/* Aplicar los estilos a elementos */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
 header{
   display: flex;
   flex-direction: row;
@@ -15,21 +29,25 @@ header{
 }
 h1{
   text-decoration: solid;
-  color: rgb(13, 14, 14);
+  color: var(--text-color);
 }
 
+
+/* Estilos para el modo claro */
 .light {
-  background-color: rgb(211, 211, 211);
-  color: black;
+  --background-color: var(--background-color-light);
+  --text-color: var(--text-color-light);
 }
 
-/* Estilos para el Modo Oscuro */
+/* Estilos para el modo oscuro */
 .dark {
-  background-color: black;
-  color: rgb(211, 211, 211);
-
+  --background-color: var(--background-color-dark);
+  --text-color: var(--text-color-dark);
 }
 
+
+
+/* Otros estilos específicos del modo claro y oscuro */
 
 
 @media (max-width: 700px) {
@@ -44,3 +62,4 @@ h1{
     font-size: 1rem;
   }
 }
+

@@ -19,7 +19,7 @@ body {
 }
 
 article {
-  height: 550px;
+  height: 600px;
     --img-scale: 1.001;
     --title-color: black;
     --link-icon-translate: -20px;

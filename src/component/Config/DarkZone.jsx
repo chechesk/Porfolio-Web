@@ -12,11 +12,14 @@ export const DarkModeProvider = ({ children }) => {
 
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
+    
   };
 
   return (
+    <div className={`App ${isDarkMode ? 'dark' : 'light'}`}>
     <DarkModeContext.Provider value={{ isDarkMode, toggleDarkMode }}>
       {children}
     </DarkModeContext.Provider>
+    </div>
   );
 };

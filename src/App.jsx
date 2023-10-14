@@ -6,15 +6,15 @@ import Nav from './component/Nav/Nav'
 import Project from './component/Project/Project'
 import Skill from './component/Skill/Skill'
 import Contact from './component/Contact/Contact'
-import { DarkModeProvider, useDarkMode } from './component/Config/DarkZone'
+import { DarkModeProvider } from './component/Config/DarkZone'
 import CardDetail from './component/Detail/Detail'
 import cardsData from './component/data/data'
 import NotFound from './component/404/404'
 import LanguageSwitcher from './component/Config/LanguageSwitcher'
-import Footer from './component/Footer/Footer'
 import BotonDZ from './component/Config/DarkZoneSwitch'
 
 function App() {
+
 
   return (
     <DarkModeProvider>
@@ -22,7 +22,6 @@ function App() {
     <header>
       <h1><img src="https://www.cyberzon3.com/img/Logo.fw.png" alt="My Image" className='logo'></img></h1>
     <BotonDZ/>
-    
     <LanguageSwitcher/>
      <Nav/>
     </header>
