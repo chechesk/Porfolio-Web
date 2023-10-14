@@ -1,0 +1,36 @@
+.language-switcher {
+    display: flex;
+    justify-content: space-between;
+    width: 10px;
+    padding-left: 25px;
+  }
+  
+  .language-switcher button {
+    background-color: #f4f4f4; /* Fondo gris claro */
+    border: none;
+    color: #333; /* Color de texto gris oscuro */
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    
+  }
+  
+  .language-switcher button.active {
+   
+    background-color: #007AFF; /* Fondo azul para el botón activo */
+    color: #fff; /* Texto blanco para el botón activo */
+  }
+  
+  /* Estilos para el botón "SP" y "EN" */
+  .language-switcher button:nth-child(1) {
+   
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  .language-switcher button:nth-child(2) {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
