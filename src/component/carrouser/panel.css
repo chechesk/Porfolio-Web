@@ -9,7 +9,7 @@
 .carousel{
   padding-left: 45px;
   padding-right: 45px;
-    width: 100%;
+    width: 80%;
     }
 .IMG {
     max-width: 70px;
@@ -18,7 +18,7 @@
 }
 @media (max-width: 768px) {
     .container{
-        padding-left: 2rem;
+        padding-left: 1rem;
         display: flex;
         flex-direction:column;
         align-content: center;
@@ -28,7 +28,7 @@
     .carousel{
         padding-left: 1.5rem;
         padding-right: 1.5rem;
-        width: 100%;
+        width: 90%;
         gap: 25px;
         }
     .H3{
@@ -40,13 +40,3 @@
     }
   }
 
-  @media (max-width: 768px) {
-    .container{
-        padding-left: 0rem;
-        display: flex;
-        flex-direction:column;
-        align-content: center;
-        padding-bottom: 25px;
-        
-    }
-}

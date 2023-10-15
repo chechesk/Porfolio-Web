@@ -10,11 +10,11 @@ export default class home extends Component {
   render() {
     return (
       <div>
-       <Intro/>
+      <Intro/>
        <Carousel/>
        <About/>
        <Skill/>
-       <Project/>
+     <Project/>
        <Footer/>
       </div>
     )
