@@ -1,7 +1,7 @@
 .mi-componente {
   display: grid;
   grid-column:auto;
-  padding: 30px;
+  padding: 20px;
   }
   
   .parent {
