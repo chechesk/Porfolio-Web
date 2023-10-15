@@ -73,27 +73,27 @@ const Nav = ({ t }) => {
         <ul className={`nav__link-mobile ${isNavOpen ? "nav-open" : ""}`}>
           <li>
             <Link to="/" onClick={closeNav}>
-              Inicio
+            <button className="buttonA">{t('navbar:home')}</button>
             </Link>
           </li>
           <li>
             <Link to="/about" onClick={closeNav}>
-              Acerca de Mí
+            <button className="buttonA">{t('navbar:about')}</button>
             </Link>
           </li>
           <li>
             <Link to="/contact" onClick={closeNav}>
-              Contacto
+            <button className="buttonA">{t('navbar:contact')}</button>
             </Link>
           </li>
           <li>
             <Link to="/projects" onClick={closeNav}>
-              Proyectos
+            <button className="buttonA">{t('navbar:projects')}</button>
             </Link>
           </li>
           <li>
             <Link to="/skills" onClick={closeNav}>
-              Habilidades
+            <button className="buttonA">{t('navbar:skill')}</button>
             </Link>
           </li>
         </ul>

@@ -16,7 +16,7 @@
       gap: 10px; /* Reduce el espacio entre los elementos */
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: 820px) {
     .contact {
       flex-direction: row; /* Cambia la dirección a columna para dispositivos más pequeños */
       align-items: center; /* Centra los elementos verticalmente */
