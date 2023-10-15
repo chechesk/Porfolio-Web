@@ -5,7 +5,7 @@ const cardsData  = [
       descripcion: 'No-code page design, with Elementor Pro, contact form registration email configuration',
       imagen: "https://picsum.photos/id/1011/800/450",
       URL: "https://www.cyberzon3.com",
-      point: '3',
+      point: '5',
       tecnologies: [
         { id: 1, nombre: 'Cpanel-Hosting' },
         { id: 2, nombre: 'Webmail' },
@@ -18,7 +18,7 @@ const cardsData  = [
       descripcion: ' apply the technologies learned in the bootcamps with nodejs, express, react, redux, sequelize, css.',
       imagen: "https://cyberzon3.com/img/Pi-Food.png",
       URL: "https://localhost",
-      point: '4',
+      point: '5',
       tecnologies: [
         { id: 1, nombre: 'Express' },
         { id: 2, nombre: 'Sequelize' },
