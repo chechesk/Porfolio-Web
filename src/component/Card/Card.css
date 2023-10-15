@@ -31,8 +31,8 @@ article {
     transform-origin: center;
     transition: all 0.4s ease-in-out;
     overflow: hidden;
-    background: linear-gradient(#212121, #212121) padding-box,
-    linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+    background:  padding-box, 
+    linear-gradient(145deg, transparent 5%,#6a58dd, #40c9ff) border-box;
     border: 2px solid transparent;
     
   }
@@ -80,7 +80,7 @@ article {
     display: inline-flex;
     align-items: center;
     text-decoration: none;
-    color: #28666e;
+    color: #0a0d0d;
   }
   
   article a:focus {
@@ -100,7 +100,7 @@ article {
   /* using the has() relational pseudo selector to update our custom properties */
   article:has(:hover, :focus) {
     --img-scale: 1.1;
-    --title-color: #28666e;
+    --title-color: #fafeff;
     --link-icon-translate: 0;
     --link-icon-opacity: 1;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;

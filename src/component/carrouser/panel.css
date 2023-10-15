@@ -16,9 +16,9 @@
     max-height:  70px;
     
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     .container{
-        padding-left: 5rem;
+        padding-left: 2rem;
         display: flex;
         flex-direction:column;
         align-content: center;
@@ -26,8 +26,8 @@
         
     }
     .carousel{
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
         width: 100%;
         gap: 25px;
         }
@@ -39,3 +39,14 @@
         max-height:  50px;
     }
   }
+
+  @media (max-width: 768px) {
+    .container{
+        padding-left: 0rem;
+        display: flex;
+        flex-direction:column;
+        align-content: center;
+        padding-bottom: 25px;
+        
+    }
+}

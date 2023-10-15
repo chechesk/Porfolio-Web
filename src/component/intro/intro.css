@@ -1,7 +1,7 @@
 .mi-componente {
   display: grid;
-  grid-column: a;
-  padding: 20px;
+  grid-column:auto;
+  padding: 30px;
   }
   
   .parent {
@@ -14,9 +14,9 @@
     
     
   .res img{
-    margin: 3rem;
+    margin: 2rem;
     overflow: hidden;
-    max-width: 20%; /* Ajusta el tamaño de la imagen según tus necesidades */
+    max-width: 10%; /* Ajusta el tamaño de la imagen según tus necesidades */
     height: auto;
   }
   .avatar{
@@ -50,7 +50,7 @@
     margin: 0 3rem;
     }
   
-  @media (max-width: 800px) {
+  @media (max-width: 768px) {
     .imagen {
       border-radius: 100%;
       overflow: hidden;
@@ -70,5 +70,69 @@
     font-size: 14px;
     text-shadow: #212121;
   }
+  .avatar{
+    border-radius: 100%;
+    height: auto;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* background: linear-gradient(#212121, #212121) padding-box,
+                linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box; */
+    border: 2px solid transparent;
+  }
+  .res .avatar {
+    z-index: 1;
+    position: relative;
+  }
+  .res{
+    width: 70px;
+    height: 70px;
+    margin: 0 3rem;
+    }
+  }
+
+  @media (max-width: 415px) {
+    .imagen {
+      border-radius: 100%;
+      overflow: hidden;
+      width: 15rem; /* Ajusta el tamaño de la imagen según tus necesidades */
+      height: 15rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      background: linear-gradient(#212121, #212121) padding-box,
+                  linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+      border: 2px solid transparent;
+    }
+    .intro{
+      font-size: 14px;
+      padding-left: 40px;
+    }
+  .li{
+    padding-left: 100px;
+    font-size: 14px;
+    text-shadow: #212121;
+  }
+  .avatar{
+    border-radius: 100%;
+    height: auto;
+    width: 150px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* background: linear-gradient(#212121, #212121) padding-box,
+                linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box; */
+    border: 2px solid transparent;
+  }
+  .res .avatar {
+    z-index: 1;
+    position: relative;
+  }
+  .res{
+    width: 50px;
+    height: 50px;
+    margin: 0 3rem;
+    }
+    .title {  
+      padding-left: 20px;
+      justify-content: center;
+      align-items: center;
+      position:absolute;
     
   }
+}
