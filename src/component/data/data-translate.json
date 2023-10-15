@@ -44,6 +44,11 @@
       "title":"About Me",
       "descripcion": "I am a developer who likes to face new challenges to learn based on the implementation to be carried out."
     },
+    "Form": {
+      "name":"Name",
+      "email": "Email",
+      "description": "How Can We Help You?"
+    },
     "navbar": {
       "home": "Home",
       "about": "About",
@@ -99,6 +104,11 @@
       "skill": "Habilidades",
       "projects": "Proyectos",
       "contact": "Contacto"
+    },
+    "Form": {
+      "name":"Nombre",
+      "email": "Correo",
+      "description": "¿Como podemos ayudarte?"
     },
     "Contact": {
       "title":"Sobre Me",

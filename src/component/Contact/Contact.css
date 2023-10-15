@@ -76,82 +76,7 @@
     cursor: pointer;
   }
 
-  @media (max-width: 700px) {
-    .card {
-      width: 17em;
-      height: 23.1em;
-      background: #383737;
-      transition: 1s ease-in-out;
-      clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
-      border-top-right-radius: 20px;
-      border-bottom-left-radius: 20px;
-      display: flex;
-      flex-direction: column;
-      background: linear-gradient(#212121, #212121) padding-box,
-                  linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
-      border: 2px solid transparent;
-    }
-    
-    .card span {
-      font-weight: bold;
-      color: white;
-      text-align: center;
-      display: block;
-      font-size: 1em;
-    }
-    
-    .card .info {
-      font-weight: 400;
-      color: white;
-      display: block;
-      text-align: center;
-      font-size: 0.72em;
-      margin: 1em;
-    }
-    
-    .card .img {
-      width: 4.8em;
-      height: 4.8em;
-      background: white;
-      border-radius: 15px;
-      margin: auto;
-    }
-    
-    .card .share {
-      margin-top: 1em;
-      display: flex;
-      justify-content: center;
-      gap: 1em;
-    }
-    
-    .card a {
-      color: white;
-      transition: .4s ease-in-out;
-    }
-    
-    .card a:hover {
-      color: red;
-    }
-    
-    .card button {
-      padding: 0.8em 1.7em;
-      display: block;
-      margin: auto;
-      border-radius: 25px;
-      border: none;
-      font-weight: bold;
-      background: #ffffff;
-      color: rgb(0, 0, 0);
-      transition: .4s ease-in-out;
-    }
-    
-    .card button:hover {
-      background: red;
-      color: white;
-      cursor: pointer;
-    }
-  }
-
+ 
   /* Estilos para tablet */
 @media (max-width: 768px) {
   .card {
@@ -164,7 +89,7 @@
   }
   
   .card .info {
-    font-size: 12px; /* Aumenta el tamaño de fuente */
+    font-size: 1em; /* Aumenta el tamaño de fuente */
   }
   
   .card .img {
@@ -184,7 +109,7 @@
   }
   
   .card .info {
-    font-size: 1.2em; /* Aumenta aún más el tamaño de fuente */
+    font-size: 0.8em; /* Aumenta aún más el tamaño de fuente */
   }
   
   .card .img {
