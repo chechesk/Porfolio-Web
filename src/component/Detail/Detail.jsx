@@ -6,7 +6,7 @@ import './Detail.css';
 function CardDetail({ cardsData, t }) {
   const { id } = useParams();
   const selectedCard = cardsData.find((card) => card.id === Number(id));
-
+console.log(selectedCard);
   if (!selectedCard) {
     // Manejar el caso en que no se encuentra la tarjeta
     return <div>Tarjeta no encontrada.</div>;
@@ -14,7 +14,7 @@ function CardDetail({ cardsData, t }) {
 
   return (
     <div className="container-about">
-      <div className="">
+      <div className="">  
         <h2>{t(`cards:${selectedCard.id}.nombre`)}</h2>
         <img src={selectedCard.imagen} alt="Imagen" className="imagDet" />
         <p>{t(`cards:${selectedCard.id}.descripcion`)}</p>
@@ -23,6 +23,8 @@ function CardDetail({ cardsData, t }) {
             <li key={tech.id}>{tech.nombre}</li>
           ))}
         </ol>
+        
+        <p><a href={selectedCard.URL}>URL</a></p>
       </div>
     </div>
   );

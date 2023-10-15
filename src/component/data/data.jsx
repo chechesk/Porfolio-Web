@@ -4,6 +4,7 @@ const cardsData  = [
       nombre: 'Wordpress',
       descripcion: 'No-code page design, with Elementor Pro, contact form registration email configuration',
       imagen: "https://picsum.photos/id/1011/800/450",
+      URL: "https://www.cyberzon3.com",
       point: '3',
       tecnologies: [
         { id: 1, nombre: 'Cpanel-Hosting' },
@@ -16,6 +17,7 @@ const cardsData  = [
       nombre: 'Pi Food',
       descripcion: ' apply the technologies learned in the bootcamps with nodejs, express, react, redux, sequelize, css.',
       imagen: "https://cyberzon3.com/img/Pi-Food.png",
+      URL: "https://localhost",
       point: '4',
       tecnologies: [
         { id: 1, nombre: 'Express' },
@@ -86,6 +88,20 @@ const cardsData  = [
       { id: 4, nombre: 'Elementor Pro' },
     ],
   },
+  {
+    id: 7,
+    nombre: 'Wordpress PERGLODI',
+    descripcion: 'We give a personality to your business and entrepreneurship through a concept or idea that you have dreamed of or thought about at some point.',
+    imagen: " https://cyberzon3.com/img/perglodi.png",
+    URL: "https://perglodi.cl/",
+    point: '5',
+    tecnologies: [
+      { id: 1, nombre: 'Cpanel' },
+      { id: 2, nombre: 'PHP' },
+      { id: 3, nombre: 'Wordpress' },
+      { id: 4, nombre: 'Elementor Pro' },
+    ],
+  }
   ];
 
 
