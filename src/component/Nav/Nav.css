@@ -15,7 +15,7 @@
   display: flex;
   justify-content: space-between; /* Espaciado entre los dos menús */
   align-items: center; /* Alineación vertical en el centro */
-  padding: 10px 20px; /* Espaciado interno */
+
   display: flex;
   font-size: large;
   z-index: 100;
