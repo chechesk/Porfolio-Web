@@ -130,10 +130,20 @@
     margin: 0 3rem;
     }
     .title {  
-      padding-left: 20px;
       justify-content: center;
       align-items: center;
-      position:absolute;
-    
   }
+  .titles {  
+    white-space: nowrap;
+  
+}
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 5rem;
+  padding-bottom: 5rem;
+  }
+  
+  
 }

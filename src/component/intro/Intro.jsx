@@ -16,7 +16,7 @@ export default class Intro extends Component {
                     alt="Imagen"
                   /> 
           <div><h2 className='title'>Jose Romero</h2></div>
-          <div><h2 className='title'>Full Stack Developers</h2></div>
+          <div><h2 className='titles'>Full Stack Developers</h2></div>
       </div>
               <div class="div3">          
            <img src='https://www.cyberzon3.com/img/express.png' className='res' alt='imagen3'/>
