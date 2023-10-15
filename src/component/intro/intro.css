@@ -38,10 +38,11 @@
     padding-left: 50px;
   }
 .title {  
-  padding-left: 100px;
+  padding-left: 00px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  position:absolute;
 
 }
   .res{
