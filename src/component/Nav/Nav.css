@@ -1,14 +1,14 @@
 /* Estilos para la barra de navegación fija */
-.sticky {
+ .sticky {
   position: fixed;
   top: 0;
   width: 100%;
   height: 65px;
   z-index: 100;
-  opacity: 52%;
+  opacity: 100%;
   color: #000;
-  background-color: #1d1717 ; /* Cambia el color de fondo al ser fija */
-  /* Otros estilos de la barra de navegación fija */
+  background-color: #050505  ; 
+ 
 }
 
 .nav {
@@ -17,11 +17,14 @@
   align-items: center; /* Alineación vertical en el centro */
   padding: 10px 20px; /* Espaciado interno */
   display: flex;
+  font-size: large;
+  
 }
 
 .nav__link {
   display: flex;
   justify-content:space-around;
+  
   
 } 
 
@@ -42,6 +45,7 @@
 .nav__large li a {
   text-decoration: none;
   color: #fff; /* Color de texto por defecto */
+  border-radius: 40%;
   padding: 10px 20px; /* Espaciado interno horizontal y vertical */
   transition: background-color 0.3s ease; /* Transición de color de fondo */
 }
@@ -58,53 +62,83 @@
   color: #fff; /* Color de texto cuando está activo */
 
 }
-
-/* Estilos para el menú hamburguesa en dispositivos móviles */
-.nav__mobile {
-  display: none; /* Ocultar este menú por defecto en pantallas grandes */
+.nav__link-mobile{
+  display: none;
+}
+.nav__mobile{
+  display: none;
 }
 
-/* Estilos para el botón hamburguesa en dispositivos móviles */
-.nav__mobile .menu-content {
-  display: block;
-  cursor: pointer;
-}
 
-/* Estilos para los elementos de la lista (botones) en dispositivos móviles */
-.nav__mobile ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column; /* Apilar elementos verticalmente en dispositivos móviles */
-}
 
-.nav__mobile li {
-  margin: 0;
-  padding: 0;
-}
-
-.nav__mobile li a {
-  text-decoration: none;
-  color: #fff; /* Color de texto por defecto */
-  padding: 10px 20px; /* Espaciado interno horizontal y vertical */
-  transition: background-color 0.3s ease; /* Transición de color de fondo */
-}
-
-/* Cambio de color de fondo al hacer hover en dispositivos móviles */
-.nav__mobile li a:hover {
-  background-color: #fff; /* Color de fondo al hacer hover */
-  color: #000; /* Color de texto al hacer hover */
-}
-
-/* Mostrar el menú hamburguesa en dispositivos móviles con una media query */
+/* Estilos para dispositivos móviles (ancho de pantalla menor a 768px) */
 @media (max-width: 768px) {
+  .nav__link{
+    display: none;
+  }
+  .nav__large{
+    display: none;
+  }
+  
   .nav__mobile {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: transparent; /* Fondo del menú en dispositivos móviles */
+    color: white;
   }
 
-  /* Ocultar el menú de navegación en pantallas pequeñas */
-  .nav__large {
+  .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .nav__link-mobile {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* Inicialmente, ocultar el menú desplegable */
+  }
+
+  .nav-open .nav__link-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 70px; /* Ajusta la posición según tus necesidades */
+    left: 0;
+    background-color:gray;
+    width: 100%;
+  }
+
+  .nav__link-mobile li {
+    margin: 10px;
+    text-align: center;
+  }
+
+  /* Estilos adicionales para el botón de cierre del menú en dispositivos móviles */
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+  }
+}
+
+@media (max-width < 768px){
+  .menu-icon{
     display: none;
+  }
+}
+
+@media (max-width < 1024){
+  .menu-icon{
+    display: none;
+  }
+  .nav{
+    font-size:large;
   }
 }

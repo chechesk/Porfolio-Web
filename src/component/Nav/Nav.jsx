@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
 import { useDarkMode } from '../Config/DarkZone';
 import './Nav.css';
-import BotonDZ from '../Config/DarkZoneSwitch';
-import LanguageSwitcher from '../Config/LanguageSwitcher';
+
 
 const Nav = ({ t }) => {
   const { isDarkMode } = useDarkMode();
@@ -44,17 +43,12 @@ const Nav = ({ t }) => {
 
   return (
     <nav className={`nav ${isSticky ? 'sticky' : ''} ${isNavOpen ? 'nav-open' : ''}`}>
-      {/* Contenido para pantallas grandes */}
-      
-      {/* <h1><img src="https://www.cyberzon3.com/img/Logo.fw.png" alt="My Image" className='logo'></img></h1>
-    <BotonDZ/>
-    
-    <LanguageSwitcher/> */}
+
       <div className="nav__large">
         
         <ul className="nav__link">
           <li>
-            <Link to="/" onClick={closeNav}>{t('navbar:home')}</Link>
+            <Link to="/" onClick={closeNav} className='Link'>{t('navbar:home')}</Link>
           </li>
           <li>
             <Link to="/about" onClick={closeNav}>{t('navbar:about')}</Link>
@@ -73,25 +67,39 @@ const Nav = ({ t }) => {
 
       {/* Contenido para dispositivos móviles */}
       <div className="nav__mobile">
-        <ul className={`nav__link-mobile ${isNavOpen ? 'show' : ''}`}>
+        <button className="menu-icon" onClick={toggleNav}>
+          ☰
+        </button>
+        <ul className={`nav__link-mobile ${isNavOpen ? "nav-open" : ""}`}>
           <li>
-            <Link to="/" onClick={closeNav}>Inicio</Link>
+            <Link to="/" onClick={closeNav}>
+              Inicio
+            </Link>
           </li>
           <li>
-            <Link to="/about" onClick={closeNav}>Acerca de Mí</Link>
+            <Link to="/about" onClick={closeNav}>
+              Acerca de Mí
+            </Link>
           </li>
           <li>
-            <Link to="/contact" onClick={closeNav}>Contacto</Link>
+            <Link to="/contact" onClick={closeNav}>
+              Contacto
+            </Link>
           </li>
           <li>
-            <Link to="/projects" onClick={closeNav}>Proyectos</Link>
+            <Link to="/projects" onClick={closeNav}>
+              Proyectos
+            </Link>
           </li>
           <li>
-            <Link to="/skills" onClick={closeNav}>Habilidades</Link>
+            <Link to="/skills" onClick={closeNav}>
+              Habilidades
+            </Link>
           </li>
         </ul>
       </div>
     </nav>
+
   );
 };
 

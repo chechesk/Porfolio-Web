@@ -150,7 +150,7 @@ article {
   }
   
 
-  @media (max-width: 800px) {
+  @media (max-width: 768px) {
     .articles {
       display: grid;
       grid-column:auto;

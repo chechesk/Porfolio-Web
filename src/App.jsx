@@ -12,6 +12,7 @@ import cardsData from './component/data/data'
 import NotFound from './component/404/404'
 import LanguageSwitcher from './component/Config/LanguageSwitcher'
 import BotonDZ from './component/Config/DarkZoneSwitch'
+import ContForm from './component/Contact/Cont-Form'
 
 function App() {
 
@@ -31,7 +32,7 @@ function App() {
       <Route path='/projects' Component={Project} />
       <Route path="/projects/:id" element={<CardDetail cardsData={cardsData} />} />
       <Route path='/skills' Component={Skill} />
-      <Route path='/contact' Component={Contact} />
+      <Route path='/contact' Component={ContForm} />
       <Route exact path='*' Component={NotFound}/>
 
     </Routes>

@@ -9,7 +9,9 @@ const Project = ({t}) => {
     return (
      <div className='containers'>
      <h2>{t('projects:title')}</h2>
+        <div className='containers-project'>
      <Cards/>
+     </div>
      </div>
     )
   

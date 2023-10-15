@@ -88,3 +88,21 @@
       height: 20px;
     }
   }
+
+  @media (max-width: 420px) {
+    .socail-media {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .socail-media li a {
+      width: 30px;
+      height: 30px;
+      margin: 3px 0;
+    }
+    
+    .socail-media li a svg {
+      width: 15px;
+      height: 15px;
+    }
+  }
