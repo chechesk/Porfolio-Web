@@ -49,7 +49,7 @@ const cardsData  = [
     nombre: 'MicroService',
     descripcion: 'implementing a docker microservice with google cloud API - CRUD',
     imagen: "https://www.outsystems.com/-/media/images/root/glossary/what-is-microservice/what-is-microservice-glossary-01.png?updated=20220311130405",
-    URL: "http://34.68.75.188/:8000/characters",
+    URL: "http://34.68.75.188:8000/characters",
     point: '5',
     tecnologies: [
       { id: 1, nombre: 'Express' },
