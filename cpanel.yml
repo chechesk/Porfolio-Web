@@ -3,4 +3,4 @@ deployment:
     - name: Copiar archivos al servidor
       commands:
         - export DEPLOYPATH=/home/siunkdhi/jrdevs.cyberzon3.com/
-        - /bin/cp -R /home/siunkdhi/repositories/Porfolio-Web/dist/* $DEPLOYPATH
+        - /bin/cp -R /home/siunkdhi/repositories/Porfolio-Web/dist/ $DEPLOYPATH
