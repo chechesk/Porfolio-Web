@@ -1,5 +1,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/siunkdhi/jrdevs.cyberzon3.com/
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp style.css $DEPLOYPATH
+    - /bin/rsync -av dist/ $DEPLOYPATCH
+
