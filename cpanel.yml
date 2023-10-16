@@ -1,5 +1,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/siunkdhi/jrdevs.cyberzon3.com/
-    - /bin/rsync -av dist/ $DEPLOYPATCH
+    - /bin/rsync -av repositories/Porfolio-Web/dist/ $DEPLOYPATCH
 
