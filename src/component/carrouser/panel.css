@@ -3,14 +3,14 @@
     display: flex;
     flex-direction:column;
     align-content: center;
-    padding-left: 150px;
+    padding-left: 130px;
     padding-bottom: 25px;
     /* background-color: rgb(211 211 211) */
 }
 .carousel{
   padding-left: 45px;
   padding-right: 45px;
-    width: 80%;
+    width: 90%;
     }
 .IMG {
     max-width: 70px;
