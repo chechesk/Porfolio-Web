@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import img from '../../assets/1684808450050.jpeg'
+import Social from '../Social/social'
 import './intro.css'
 
 export default class Intro extends Component {
@@ -16,7 +17,9 @@ export default class Intro extends Component {
                     alt="Imagen"
                   /> 
           <div><h2 className='title'>Jose Romero</h2></div>
-          <div><h2 className='titles'>Full Stack Developers</h2></div>
+          <div><h2 className='titles'>Full Stack Developers  </h2></div>
+          <div className='title'><Social/></div>
+            
       </div>
               <div class="icones">          
            <img src='https://www.cyberzon3.com/img/express.png' className='res' alt='imagen3'/>
