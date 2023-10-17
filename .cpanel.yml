@@ -1,5 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/siunkdhi/jrdevs.cyberzon3.com/public_html
-    - /bin/cp -R ./ $DEPLOYPATH
+    - export DEPLOYPATH=/home/siunkdhi/jrdevs.cyberzon3.com/
+    - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp vide.svg $DEPLOYPATH
