@@ -24,7 +24,7 @@ console.log(selectedCard);
           ))}
         </ol>
         
-        <p><a href={selectedCard.URL}>URL</a></p>
+        <p><button href={selectedCard.URL}>{t(`button:title`)}</button></p>
       </div>
     </div>
   );

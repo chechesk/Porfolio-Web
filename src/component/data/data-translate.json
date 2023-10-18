@@ -94,6 +94,9 @@
       "skill": "Skill",
       "projects": "Project",
       "contact": "Contact"
+    },
+    "button": {
+      "title":"Let's go to the Web"
     }
   },
   "es": {
@@ -190,8 +193,11 @@
       "description": "¿Como podemos ayudarte?"
     },
     "Contact": {
-      "title":"Sobre Me",
+      "title":"Sobre Mi",
       "descripcion": "Soy un desarrollador al que le gusta afrontar nuevos retos para aprender en base a la implementación a realizar."
+    },
+    "button": {
+      "title":"Vamos a la Web"
     }
   }
 }

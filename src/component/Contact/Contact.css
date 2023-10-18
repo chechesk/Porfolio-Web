@@ -1,5 +1,7 @@
 
-
+.share{
+  padding-bottom: 35px
+}
 
 
   .card {
@@ -8,8 +10,8 @@
     background: #383737;
     transition: 1s ease-in-out;
     
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
     display: flex;
     flex-direction: column;
     background:   padding-box,
