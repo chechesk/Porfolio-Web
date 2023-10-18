@@ -1,18 +1,31 @@
 import React from "react";
-import './Skill.css';
-import { SkillBars } from 'react-skills';
 import skillsData from "../data/skilldata";
-import { withTranslation } from 'react-i18next';
+import Card_Skill from "../Card/Card-Skill";
+ import './Skill.css';
 
-const Skill = ({ t }) => {
+
+const Skill = () => {
+  // console.log(skillsData);
   return (
-    <div className="container-skill">
-      <h2>{t('skills:title')}</h2>
-      <div className="skill-container">
-        <SkillBars skills={skillsData} />
-      </div>
+    <div className="cards-skill">
+      {skillsData.map((p, index) => (
+        <div key={index}>
+      <Card_Skill 
+          key={p.id}
+          id={index} 
+          name={p.name}
+          image={p.image}
+          description_cut={p.description_cut}
+          description={p.description}
+          level={p.level}
+          color={p.color}
+          />
+          </div>
+    ))}
     </div>
-  );
-};
+  )
+}
+ 
 
-export default withTranslation()(Skill);
+
+export default Skill;

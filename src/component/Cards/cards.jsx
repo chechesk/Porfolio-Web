@@ -4,13 +4,15 @@ import { Link } from "react-router-dom";
 import './cards.css'
 import CardDetail from "../Detail/Detail";
 import cardsData from "../data/data";
+import { useTranslation } from "react-i18next";
+
 
 
 
 
 export default function Cards  (){
   const [selectedCard, setSelectedCard] = React.useState(null);
-
+  const { t, i18n } = useTranslation();
   const handleCardSelect = (card) => {
     setSelectedCard(card);
   };

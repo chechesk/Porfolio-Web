@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     justify-content:space-around; /* Para distribuir las tarjetas uniformemente en cada fila */
     margin: -1px; /* Espaciado entre las tarjetas */
+    padding-bottom: 20px;
 }
 
 .card-link {

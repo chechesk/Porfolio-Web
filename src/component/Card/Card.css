@@ -6,6 +6,9 @@ body {
   line-height: 1.6rem;
  
 } 
+.article-tec{
+  height: 60px;
+}
 .title-card{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 18px;
