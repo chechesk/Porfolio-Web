@@ -28,8 +28,8 @@ return(
               className=""
               key={card.id}
               id={card.id}
-              nombre={card.nombre}
-              descripcion={card.descripcion}
+              nombre={t(`cards:${card.id}.nombre`)}
+              descripcion={t(`cards:${card.id}.descripcion`)}
               imagen={card.imagen}
               point={card.point}
               tecnologies={card.tecnologies}

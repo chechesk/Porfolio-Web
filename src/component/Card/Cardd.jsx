@@ -1,9 +1,10 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import './Card.css'
 
 
   const CardModel  = ({id,nombre,descripcion,imagen,point,tecnologies})=> {
-   
+    const { t, i18n } = useTranslation();
     const generateStars = (point) => {
       const stars = [];
       for (let i = 1; i <= point; i++) {
@@ -27,7 +28,7 @@ import './Card.css'
           <div className="article-body">
             <h2 className="title-card">{nombre}</h2>
             <p className="article-info">   {descripcion}         </p>
-            <p className="article-tec">Tecnologies: {tecnologies.map((tech) => tech.nombre).slice(0,5).join(', ')}</p>
+            <p className="article-tec">{t('technologies:title')}: {tecnologies.map((tech) => tech.nombre).slice(0,5).join(', ')}</p>
             <a href="#" className="read-more">
               Read more 
               <svg xmlns="http://www.w3.org/2000/svg" className="icon" viewBox="0 0 20 20" fillRule="currentColor">
