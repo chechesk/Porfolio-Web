@@ -26,6 +26,8 @@ function App() {
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
         <meta name="keywords" content={keywords.join(', ')} />
+        <meta property="og:image" content="https://www.cyberzon3.com/img/thumbnail.png" />
+        <meta property="og:url" content="https://www.cyberzon3.com/img/thumbnail.png" />
         {/* Otros metadatos aquí */}
       </Helmet>
     <header>

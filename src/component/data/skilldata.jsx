@@ -1,6 +1,9 @@
 const skillsData= [
     {
       name: 'Wordpress',
+      image: '',
+      description_cut: '',
+      description: '',
       level: 80,
       color: 'blue',
     },
