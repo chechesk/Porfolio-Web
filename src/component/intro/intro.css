@@ -3,12 +3,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3rem 5rem;
-  padding-bottom: 10rem;
+  padding-top: 1rem;
+  padding-bottom: 10px;
 }
 
 .avatar-img {
-  width: 400px;
+  width: 350px;
   border-radius: 100%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   /* background: linear-gradient(#212121, #212121) padding-box,
@@ -25,9 +25,10 @@
 }
 
 .res {
-  width: 110px;
-  height: 110px;
+  width: 80px;
+  height: 80px;
   margin: 0 0rem;
+
 }
 
 /* Estilos para dispositivos móviles */
