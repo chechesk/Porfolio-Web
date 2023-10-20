@@ -97,7 +97,9 @@
    background-color: #fff;
    border-color: #fff;
  }
- 
+ .error-message{
+  color: wheat;
+ }
 
   @media (max-width: 768px) {
    .form-container {

@@ -65,7 +65,7 @@ const cardsData  = [
     nombre: 'Wordpress CGSEVENTS',
     descripcion: 'event development company in Cacino and Metaverses, with the standards of the regulatory federation',
     imagen: " https://cgsevents.io/wp-content/uploads/2023/08/portada.jpeg",
-    URL: "http://www.cgsevent.io",
+    URL: "http://www.cgsevents.io",
     point: '5',
     tecnologies: [
       { id: 1, nombre: 'Cpanel' },

@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { withTranslation } from 'react-i18next';
+import { Link } from "react-router-dom";
 import './Detail.css';
 
 function CardDetail({ cardsData, t }) {
@@ -23,8 +24,9 @@ console.log(selectedCard);
             <li key={tech.id}>{tech.nombre}</li>
           ))}
         </ol>
-        
-        <p><button href={selectedCard.URL}>{t(`button:title`)}</button></p>
+          <a href={selectedCard.URL} target="_blank">
+            <button>{t(`button:title`)}</button>
+          </a>
       </div>
     </div>
   );
