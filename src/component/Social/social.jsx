@@ -6,16 +6,16 @@ export default class social extends Component {
     return (
       <div>
        <ul className="socail-media">
-  <li>
+  {/* <li>
     <a href="https://www.facebook.com/chechesk">
        <svg viewBox="0 0 10.712 20" height="20" width="10.712" xmlns="http://www.w3.org/2000/svg">
   <path transform="translate(-22.89)" d="M32.9,11.25l.555-3.62H29.982V5.282a1.81,1.81,0,0,1,2.041-1.955H33.6V.245A19.255,19.255,0,0,0,30.8,0c-2.86,0-4.73,1.734-4.73,4.872V7.63H22.89v3.62h3.179V20h3.913V11.25Z" id="facebook"></path>
 </svg>
 
     </a>
-  </li>
+  </li> */}
 
-  <li>
+  {/* <li>
     <a href="https://www.instagram.com/jgromerom89/">
             <svg viewBox="0 0 20 20" height="20" width="20" xmlns="http://www.w3.org/2000/svg" id="instagram">
           <g transform="translate(15.354 3.707)" data-name="Group 64" id="Group_64">
@@ -36,7 +36,7 @@ export default class social extends Component {
         </svg>
 
     </a>
-  </li>
+  </li> */}
 
 
 
@@ -74,7 +74,7 @@ export default class social extends Component {
 
     </a>
   </li> */}
-  
+{/*   
    <li>
     <a href="https://twitter.com/chechesk">
        <svg viewBox="0 0 23.06 18" height="18" width="23.06" xmlns="http://www.w3.org/2000/svg">
@@ -83,7 +83,7 @@ export default class social extends Component {
 
 
     </a>
-  </li>
+  </li> */}
 
   <li>
     <a href="https://github.com/chechesk">
