@@ -121,11 +121,11 @@ article {
   Generic layout (demo looks)
   **************************/
   
-  *,
+  /* *,
   *::before,
   *::after {
     box-sizing: border-box;
-  }
+  } */
   
 
   
