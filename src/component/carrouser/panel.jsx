@@ -37,7 +37,7 @@ const CustomNextArrow = (props) => (
 const Carousel = () => {
   const settings = {
     showArrows:true,
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 800,
     slidesToShow: 5,

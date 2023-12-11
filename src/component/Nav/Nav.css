@@ -44,7 +44,7 @@
 
 .nav__large li a {
   text-decoration: none;
-  color: #fff; /* Color de texto por defecto */
+  color: #494748; /* Color de texto por defecto */
   border-radius: 40%;
   padding: 10px 20px; /* Espaciado interno horizontal y vertical */
   transition: background-color 0.3s ease; /* Transición de color de fondo */

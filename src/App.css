@@ -1,5 +1,5 @@
 :root {
-  --background-color-light: #b6b2b2; /* Gris claro */
+  --background-color-light: #dadfe6; /* Gris claro */
   --background-color-dark: #121212; /* Fondo oscuro */
   --text-color-light: #333333;
   --text-color-dark: #ffffff;
@@ -14,11 +14,13 @@ body {
 
 header{
   display: flex;
+  height: 80px;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: auto;
-  background-color: rgb(47, 47, 129);
+  background-color: #9bb2cb;
+  box-shadow: 0 0 10px 0 black;
 }
 
 
