@@ -25,8 +25,8 @@
 }
 
 .res {
-  width: 80px;
-  height: 80px;
+  width: 140px;
+  height: 140px;
   margin: 0 0rem;
   padding-left: 15px;
   padding-right: 15px ;
@@ -45,8 +45,8 @@
   }
 
   .res {
-      width: 80px; /* Cambiamos el tamaño de .res para pantallas más pequeñas */
-      height: 80px;
+      width: 120px; /* Cambiamos el tamaño de .res para pantallas más pequeñas */
+      height: 120px;
   }
 }
 
@@ -63,10 +63,6 @@
             width: 200px; /* Cambiamos el tamaño del avatar para pantallas más pequeñas */
         }
 
-        .res {
-            width: 40px; /* Cambiamos el tamaño de .res para pantallas más pequeñas */
-            height: 40px;
-        }
         .res {
           width: 80px;
           height: 80px;
