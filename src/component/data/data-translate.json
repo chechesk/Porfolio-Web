@@ -41,9 +41,19 @@
       "description": "Express is a Node.js framework that simplifies the creation of web applications and APIs. It provides a set of functions and tools for handling routes, requests, and responses efficiently. Express"
     },
     "6":{
-      "name": "JavaScript",
-      "description_cut": "Versatile programming language",
-      "description": "JavaScript is a versatile programming language widely used in web development. It is used to add interactivity and dynamism to websites and applications. JavaScript runs in the clients browser and has become essential in building modern web applications, including single page applications (SPAs)"
+      "name": "Wordpress",
+      "description_cut": "WordPress allows you to manage your website or blog autonomously.",
+      "description": "It is a database system that allows users to add, modify and organize themes, plugins and other types of content. Every WordPress website owner can access the dashboard to manage their site from a single place."
+     },
+     "7":{
+      "name": "Docker",
+      "description_cut": "IT software called Docker is the containerization technology of Linux®.",
+      "description": "With Docker, you can use containers as very lightweight, modular virtual machines, giving you the flexibility to create, deploy, copy, and move them from one environment to another, allowing you to optimize applications for the cloud."
+     },
+     "8":{
+      "name": "Amazon Web Service",
+      "description_cut": "AWS Services: Infrastructure software, DevOps, Machine Learning.",
+      "description": "They provide storage, networking, databases, web and mobile application services, security, computing power, messaging, artificial intelligence, identity and compliance."
      }
     },
     "developers": {
@@ -77,6 +87,14 @@
       "7": {
         "nombre": "Wordpress PERGLODI",
         "descripcion": "We give a personality to your business and entrepreneurship through a concept or idea that you have dreamed of or thought about at some point."
+      },
+      "8": {
+        "nombre": "Wordpress CGS Brasil",
+        "descripcion": "Participe de eventos exclusivos para executivos no Brasil. Conferências, treinamento e networking no CGS 2024. Reserve seu lugar hoje e conecte-se com profissionais líderes em todo o mundo."
+      },
+      "9": {
+        "nombre": "MERN Qauntum",
+        "descripcion": "Optimization, Digitization and Automation of Investment Portfolios with Artificial Intelligence."
       }
     },
     "Contact": {
@@ -142,10 +160,19 @@
     },
     "6":{
       "name": "JavaScript",
-      "description_cut": "Lenguaje de programación versátil",
-      "description": "JavaScript es un lenguaje de programación versátil ampliamente utilizado en el desarrollo web. Se utiliza para agregar interactividad y dinamismo a sitios web y aplicaciones. JavaScript se ejecuta en el navegador del cliente y se ha vuelto fundamental en la construcción de aplicaciones web modernas, incluidas las de una sola página (SPA)."
-     }
-     
+      "description_cut": "WordPress te permite gestionar tu sitio web o blog de forma autónoma.",
+      "description": "Es sistema de base de datos que permite a los usuarios añadir, modificar y organizar, temas, plugins y otros tipos de contenido. Cada propietario de un sitio web de WordPress puede acceder al panel de control para gestionar su sitio desde un único lugar."
+     },
+     "7":{
+      "name": "Docker",
+      "description_cut": "Sofware TI llamado Docker es la tecnología de organización en contenedores de Linux®.",
+      "description": "Con Docker, puede utilizar los contenedores como máquinas virtuales muy livianas y modulares, y obtiene la flexibilidad necesaria para crearlos, implementarlos, copiarlos y trasladarlos de un entorno a otro, lo cual le permite optimizar las aplicaciones para la nube."
+     },
+     "8":{
+      "name": "Amazon Web Service",
+      "description_cut": "AWS Servicios: Software de infraestructura, DevOps, Machine Learning.",
+      "description": "Brindan almacenamiento, redes, bases de datos, servicios de aplicaciones web y móviles, seguridad, potencia de cómputo, mensajería, inteligencia artificial, identidad y conformidad."
+     } 
     },
     "developers": {
       "title": "Desarrolladores Full Stack"
@@ -178,7 +205,16 @@
       "7": {
         "nombre": "Wordpress PERGLODI",
         "descripcion": "Le damos personalidad a tu negocio y emprendimiento a través de un concepto o idea que hayas soñado o pensado en algún momento."
+      },
+      "8": {
+        "nombre": "Wordpress CGS Brasil",
+        "descripcion": "Únete a eventos exclusivos para ejecutivos en Brasil. Conferencias, capacitación y networking en CGS 2024. Reserva tu lugar hoy y conecta con profesionales destacados a nivel global."
+      },
+      "9": {
+        "nombre": "MERN Qauntum",
+        "descripcion": "Optimización, Digitalización y Automatizaciones de Portafolios de Inversión con Inteligencia Artificial."
       }
+
     },
     "navbar": {
       "home": "Inicio",

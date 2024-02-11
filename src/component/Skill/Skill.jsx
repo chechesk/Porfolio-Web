@@ -9,6 +9,9 @@ const Skill = () => {
   const { t, i18n } = useTranslation();
   // console.log(skillsData);
   return (
+    <div className="cards-container"> 
+
+    
     <div className="cards-skill">
       {skillsData.map((p, index) => (
         <div key={index}>
@@ -24,6 +27,7 @@ const Skill = () => {
           />
           </div>
     ))}
+    </div>
     </div>
   )
 }

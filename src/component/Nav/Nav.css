@@ -1,5 +1,5 @@
 /* Estilos para la barra de navegación fija */
- .sticky {
+ /* .sticky {
   position: fixed;
   top: 0;
   width: 100%;
@@ -9,13 +9,13 @@
   color: #000;
   background-color: #050505  ; 
  
-}
+} */
 
 .nav {
   display: flex;
   justify-content: space-between; /* Espaciado entre los dos menús */
   align-items: center; /* Alineación vertical en el centro */
-
+  width: 40%;
   display: flex;
   font-size: large;
   z-index: 100;

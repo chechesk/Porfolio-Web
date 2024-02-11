@@ -52,6 +52,24 @@ const skillsData= [
     description: 'Wordpress es una plataforma de gestión de contenido (CMS) que permite crear y administrar sitios web de manera sencilla y versátil. Es ampliamente utilizado para blogs, sitios web corporativos, tiendas en línea y más. Ofrece una gran cantidad de complementos y temas para personalizar y extender las funcionalidades del sitio.',
     level: 80,
     color: 'blue',
+  },
+  {
+    id:"7",
+    name: 'Docker',
+    image: 'https://www.cyberzon3.com/img/docker-Logo.png',
+    description_cut: 'El sistema de software de TI llamado "Docker" es la tecnología de organización en contenedores que posibilita la creación y el uso de los contenedores de Linux®.',
+    description: 'Con Docker, puede utilizar los contenedores como máquinas virtuales muy livianas y modulares, y obtiene la flexibilidad necesaria para crearlos, implementarlos, copiarlos y trasladarlos de un entorno a otro, lo cual le permite optimizar las aplicaciones para la nube.',
+    level: 80,
+    color: 'blue',
+  },
+  {
+    id:"8",
+    name: 'Docker',
+    image: 'https://www.cyberzon3.com/img/aws.png',
+    description_cut: 'AWS Servicios: Software de infraestructura, DevOps, Machine Learning.',
+    description: 'Brindan almacenamiento, redes, bases de datos, servicios de aplicaciones web y móviles, seguridad, potencia de cómputo, mensajería, inteligencia artificial, identidad y conformidad.',
+    level: 80,
+    color: 'blue',
   }
 ];
   

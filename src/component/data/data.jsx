@@ -101,6 +101,36 @@ const cardsData  = [
       { id: 3, nombre: 'Wordpress' },
       { id: 4, nombre: 'Elementor Pro' },
     ],
+  },
+  {
+    id: 8,
+    nombre: 'Wordpress CGSBRASIL',
+    descripcion: 'We give a personality to your business and entrepreneurship through a concept or idea that you have dreamed of or thought about at some point.',
+    imagen: " https://cyberzon3.com/img/CgsBrasil.png",
+    URL: "https://cgsbrasil.com/",
+    point: '5',
+    tecnologies: [
+      { id: 1, nombre: 'Cpanel' },
+      { id: 2, nombre: 'PHP' },
+      { id: 3, nombre: 'Wordpress' },
+      { id: 4, nombre: 'Elementor Pro' },
+    ],
+  },
+  {
+    id: 9,
+    nombre: 'Quantum',
+    descripcion: 'Optimización, Digitalización y Automatizaciones de Portafolios de Inversión con Inteligencia Artificial',
+    imagen: " https://cyberzon3.com/img/Quantum.png",
+    URL: "https://dashboard.quantumdassets.com/",
+    point: '5',
+    tecnologies: [
+      { id: 1, nombre: 'NodeJS' },
+      { id: 2, nombre: 'Javascripts' },
+      { id: 3, nombre: 'Nextjs' },
+      { id: 4, nombre: 'React' },
+      { id: 5, nombre: 'AWS' },
+      { id: 6, nombre: 'Docker' },
+    ],
   }
   ];
 
