@@ -1,30 +1,40 @@
-import React from 'react';
-import { useTranslation } from 'react-i18next';
-import './LanguageSwitcher.css'
+import React, { useEffect } from "react";
+import { useDarkMode } from "./DarkModeContext";
+import './DarkZoneSwitch.css'
 
-const LanguageSwitcher = () => {
-  const { t, i18n } = useTranslation();
+const BotonDZ = () => {
+    const { isDarkMode, toggleDarkMode } = useDarkMode();
 
-  const changeLanguage = (language) => {
-    i18n.changeLanguage(language);
-  };
+    const handleToggle = () => {
+        toggleDarkMode();
+        document.documentElement.classList.toggle('dark');
+        document.documentElement.classList.toggle('light');
+        localStorage.setItem('isDarkMode', !isDarkMode ? 'dark' : 'light');
+    };
 
-  return (
-    <div className="language-switcher">
-      <button
-        onClick={() => changeLanguage('es')}
-        className={i18n.language === 'es' ? 'active' : ''}
-      >
-        SP
-      </button>
-      <button
-        onClick={() => changeLanguage('en')}
-        className={i18n.language === 'en' ? 'active' : ''}
-      >
-        EN
-      </button>
-    </div>
-  );
-};
+    useEffect(() => {
+        const storedMode = localStorage.getItem('isDarkMode') === 'dark';
+        if (storedMode) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.add('light');
+        }
+    }, []);
 
-export default LanguageSwitcher;
+    return (
+        <div>
+            <label className="ui-switch">
+                <input
+                    type="checkbox"
+                    checked={isDarkMode}
+                    onChange={handleToggle}
+                />
+                <div className="slider">
+                    <div className="circle"></div>
+                </div>
+            </label>
+        </div>
+    );
+}
+
+export default BotonDZ;

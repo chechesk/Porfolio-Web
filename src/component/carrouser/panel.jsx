@@ -18,7 +18,7 @@ const technologies = [
   { id: 11, nombre: "Git", imagen: "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" },
   { id: 12, nombre: "GitHub", imagen: "https://www.cyberzon3.com/img/GitHub-Mark.png" },
   { id: 13, nombre: "Redux", imagen: "https://www.cyberzon3.com/img/Redux.png" },
-  { id: 14, nombre: "Wordpress", imagen: "https://w7.pngwing.com/pngs/510/329/png-transparent-wordpress-com-blog-computer-icons-wordpress-emblem-trademark-logo.png" },
+  { id: 14, nombre: "Wordpress", imagen: "https://www.cyberzon3.com/img/wordpress.png" },
   // Agrega aquí más tecnologías con sus respectivas imágenes
 ];
 
