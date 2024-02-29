@@ -64,7 +64,7 @@ const skillsData= [
   },
   {
     id:"8",
-    name: 'Amazon Web Server',
+    name: 'Docker',
     image: 'https://www.cyberzon3.com/img/aws.png',
     description_cut: 'AWS Servicios: Software de infraestructura, DevOps, Machine Learning.',
     description: 'Brindan almacenamiento, redes, bases de datos, servicios de aplicaciones web y móviles, seguridad, potencia de cómputo, mensajería, inteligencia artificial, identidad y conformidad.',
