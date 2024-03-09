@@ -7,8 +7,8 @@ import ContForm from "../Contact/Cont-Form";
 const Footer = () =>{
     return (
         <div className="Footer">
-            <ContForm/>
-    <h3 className="foot-center">   JR devs @ 2023 Todos los Derechos Reservados </h3> <Social/>
+            {/* <ContForm/> */}
+    <h3 className="foot-center">   JR dev © 2023 Todos los Derechos Reservados </h3> <Social/>
     </div>
     )
 }

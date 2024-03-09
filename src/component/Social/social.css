@@ -1,108 +1,73 @@
-.socail-media {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: start;
-    gap: 10px;
-    list-style: none;
-    
-  }
-  
-  .socail-media li a {
-    width: 30px;
-    height: 30px;
-    background-color: #2e159d;
-    display: flex;
-    overflow: hidden;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    position: relative;
-    z-index: 9;
-    border: 1px solid #25159d;
-    border-radius: 50px;
-  }
-  
-  .socail-media li a svg {
-    width: 15px;
-    height: 15px;
-    -o-object-fit: contain;
-    object-fit: contain;
-    filter: invert(100%) sepia(0%) saturate(7455%) hue-rotate(57deg) brightness(108%) contrast(105%);
-  }
-  
-  .socail-media li a::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-clip-path: polygon(0 0, 100% 0, 0 0, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 0 0, 0 100%);
-    background-color: #fff;
-    z-index: -1;
-    top: 0;
-    left: 0;
+.card {
+  width: fit-content;
+  height: fit-content;
+  /* background-color: rgb(238, 238, 238); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+  /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055); */
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: .3s;
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
     opacity: 0;
   }
-  
-  .socail-media li a:hover::after {
-    animation: sideClip 0.5s linear;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+  100% {
+    transform: translateY(0);
     opacity: 1;
   }
-  
-  .socail-media li a:hover svg {
-    animation: fadeInLeft 0.3s linear both;
-    filter: invert(52%) sepia(85%) saturate(2286%) hue-rotate(54deg) brightness(92%) contrast(84%);
-  }
-  
-  @keyframes sideClip {
-    0% {
-      clip-path: polygon(0 0, 100% 0, 0 0, 0 100%);
-    }
-  
-    50% {
-      clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%);
-    }
-  
-    100% {
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
-  }
-  
-  @media (max-width: 700px) {
-    .socail-media {
-      flex-direction: row;
-      align-items: center;
-    }
-  
-    .socail-media li a {
-      width: 40px;
-      height: 40px;
-      margin: 5px 0;
-    }
-    
-    .socail-media li a svg {
-      width: 20px;
-      height: 20px;
-    }
-  }
+}
 
-  @media (max-width: 420px) {
-    .socail-media {
-      flex-direction: row;
-      align-items: center;
-    }
-  
-    .socail-media li a {
-      width: 30px;
-      height: 30px;
-      margin: 3px 0;
-    }
-    
-    .socail-media li a svg {
-      width: 15px;
-      height: 15px;
-    }
-  }

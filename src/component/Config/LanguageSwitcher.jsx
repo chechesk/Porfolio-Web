@@ -10,16 +10,16 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <div className="language-switcher">
+    <div className=" ">
       <button
         onClick={() => changeLanguage('es')}
-        className={i18n.language === 'es' ? 'active' : ''}
+        className={i18n.language === 'es' ? 'active text-md ' : ' text-sm mx-4'}
       >
         SP
       </button>
       <button
         onClick={() => changeLanguage('en')}
-        className={i18n.language === 'en' ? 'active' : ''}
+        className={i18n.language === 'en' ? 'active text-md  ' : ' text-sm ml-5' }
       >
         EN
       </button>

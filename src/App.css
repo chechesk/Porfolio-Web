@@ -1,40 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --background-color-light: #dadfe6; /* Gris claro */
   --background-color-dark: #121212; /* Fondo oscuro */
   --text-color-light: #333333;
   --text-color-dark: #ffffff;
-  /* Otros estilos */
+ 
 }
 
 /* Aplicar los estilos a elementos */
 body {
   background-color: var(--background-color);
   color: var(--text-color);
-}
-
-header{
-  display: flex;
-  height: 80px;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: auto;
-  background-color: #9bb2cb;
-  box-shadow: 0 0 10px 0 black;
-}
-
-
-.logo {
-  padding-left: 25px;
-  width: 190px;
-  height: 50px;
+ 
 }
 
 h1{
-  text-decoration: solid;
-  color: var(--text-color);
+  --text-color-light: #333333;
+  --text-color-dark: #ffffff;
 }
-
 
 /* Estilos para el modo claro */
 .light {
@@ -46,48 +32,6 @@ h1{
 .dark {
   --background-color: var(--background-color-dark);
   --text-color: var(--text-color-dark);
-}
-
-
-
-/* Otros estilos específicos del modo claro y oscuro */
-
-
-@media (max-width: 768px) {
-  h2 {
-    font-size: 1rem;
-  }
-
-  .contenido {
-    font-size: 1rem;
-  }
-}
-@media (max-width: 415px) {
-  h2 {
-    font-size: 1rem;
-  }
-  .logo {
-    padding-left: 10px;
-    width: 100px;
-    height: 50px;
-  }
-  .contenido {
-    font-size: 1rem;
-  }
-}
-
-
-@media (max-width: 1024px) {
-  h2 {
-    font-size: 1rem;
-  }
-  .logo {
-    width: 150px;
-    height: 50px;
-  }
-  .contenido {
-    font-size: 1rem;
-  }
 }
 
 

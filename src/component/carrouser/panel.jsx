@@ -18,21 +18,11 @@ const technologies = [
   { id: 11, nombre: "Git", imagen: "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" },
   { id: 12, nombre: "GitHub", imagen: "https://www.cyberzon3.com/img/GitHub-Mark.png" },
   { id: 13, nombre: "Redux", imagen: "https://www.cyberzon3.com/img/Redux.png" },
-  { id: 14, nombre: "Wordpress", imagen: "https://w7.pngwing.com/pngs/510/329/png-transparent-wordpress-com-blog-computer-icons-wordpress-emblem-trademark-logo.png" },
+  { id: 14, nombre: "Wordpress", imagen: "https://www.cyberzon3.com/img/wordpress.png" },
   // Agrega aquí más tecnologías con sus respectivas imágenes
 ];
 
-const CustomPrevArrow = (props) => (
-  <div {...props} className="custom-prev-arrow">
-    Prev
-  </div>
-);
 
-const CustomNextArrow = (props) => (
-  <div {...props} className="custom-next-arrow">
-    Next
-  </div>
-);
 
 const Carousel = () => {
   const settings = {
@@ -40,7 +30,7 @@ const Carousel = () => {
     dots: false,
     infinite: true,
     speed: 800,
-    slidesToShow: 5,
+    slidesToShow: 8,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000, 
@@ -48,14 +38,14 @@ const Carousel = () => {
    };
 
   return (
-    <div className='container'>
+    <div className='mt-8 mx-16'>
      
-    <div className='carousel'>
+    <div className='w-auto'>
       <Slider {...settings}>
         {technologies.map((tech) => (
-          <div key={tech.id}>
-            <h3 className='H3'>{tech.nombre}</h3>
-            <img className='IMG'
+          <div key={tech.id} className='w-[40px]'>
+            <h3 className='ml-2 hidden'>{tech.nombre}</h3>
+            <img className='items-center h-[80px]'
               src={tech.imagen}
               alt={tech.nombre}
             />

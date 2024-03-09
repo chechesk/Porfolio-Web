@@ -31,13 +31,13 @@ const BotonDZ = () => {
 
     return (
         <div>
-            <label className="ui-switch">
+            <label className="ui-switch ">
                 <input
                     type="checkbox"
                     checked={isDarkMode}
                     onChange={handleToggle}
                 />
-                <div className="slider">
+                <div className="slider mt-1">
                     <div className="circle"></div>
                 </div>
             </label>

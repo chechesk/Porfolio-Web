@@ -7,7 +7,7 @@ import './Detail.css';
 function CardDetail({ cardsData, t }) {
   const { id } = useParams();
   const selectedCard = cardsData.find((card) => card.id === Number(id));
-console.log(selectedCard);
+// console.log(selectedCard);
   if (!selectedCard) {
     // Manejar el caso en que no se encuentra la tarjeta
     return <div>Tarjeta no encontrada.</div>;

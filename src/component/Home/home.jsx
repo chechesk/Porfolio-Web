@@ -11,7 +11,7 @@ import './Home.css'
 export default class home extends Component {
   render() {
     return (
-      <div className='Home'>
+      <div className=' mt-10 '>
       <Fade triggerOnce={true}>
         <Intro />
       </Fade>
@@ -21,15 +21,15 @@ export default class home extends Component {
       <Fade triggerOnce={true}>
         <About />
       </Fade>
-      <Fade triggerOnce={true}>
+       <Fade triggerOnce={true}>
         <Skill />
       </Fade>
-      <Fade triggerOnce={true}>
+     <Fade triggerOnce={true}>
         <Project />
       </Fade>
-      <Fade triggerOnce={true}>
+      {/* <Fade triggerOnce={true}>
         <Footer />
-      </Fade>
+      </Fade> */}
     </div>
     )
   }
