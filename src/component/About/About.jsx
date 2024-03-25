@@ -8,8 +8,8 @@ class About extends Component {
 
     return (
       
-        <div class="grid grid-rows-3 grid-flow-col gap-4">
-          <div class="row-span-3 ...">
+        <div className="grid grid-rows-3 grid-flow-col gap-4 ">
+          <div className="row-span-3 ">
             <img
               src="https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_plain_wordmark_logo_icon_146423.png"
               className="w-[80px] h-[80px]   m-16 "
@@ -32,11 +32,11 @@ class About extends Component {
             />
           </div>
 
-          <div class="col-span-2 pt-10">
+          <div className="col-span-2 pt-10">
           <h2 className="text-center pt-10 text-3xl">{t("about:title")} </h2>
           </div>
 
-          <div class="row-span-2 mt-[-140px] md:mt-[-70px]  ">
+          <div className="row-span-2 mt-[-140px] md:mt-[-70px]  ">
           
             <p className="my-1 text-xl text-justify mx-8">
               {t("about:description")}
@@ -44,16 +44,16 @@ class About extends Component {
             <p className="my-1 text-xl text-justify mx-8">
               {t("about:summary")}
             </p>
-            <table class=" divide-y divide-gray-200  md:mx-[30%] mt-10 ">
+            <table className=" divide-y divide-gray-200  md:mx-[30%] mt-10 ">
               <thead className="text-center ">
                 <tr>
-                  <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider w-[240px]">
+                  <th className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider w-[240px]">
                     Backend
                   </th>
-                  <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider w-[240px]">
+                  <th className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider w-[240px]">
                     Frontend
                   </th>
-                  <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider w-[240px]">
+                  <th className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider w-[240px]">
                     DevOps
                   </th>
                 </tr>
@@ -73,7 +73,7 @@ class About extends Component {
                     
                     </ul>
                   </td>
-                  <td class="px-6 py-4 whitespace-no-wrap">
+                  <td className="px-6 py-4 whitespace-no-wrap">
                     <ul>
                       <li className="text-black dark:text-black">React</li>
                       <li className="text-black dark:text-black">Vite</li>
@@ -85,7 +85,7 @@ class About extends Component {
                       <li className="text-black dark:text-black">Git / GitHub</li>
                     </ul>
                   </td>
-                  <td class="px-6 py-4 whitespace-no-wrap">
+                  <td className="px-6 py-4 whitespace-no-wrap">
                     <ul>
                       <li className="text-black dark:text-black">Ubuntu</li>
                       <li className="text-black dark:text-black">Windows</li>

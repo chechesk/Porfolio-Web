@@ -7,10 +7,10 @@ class Contact extends Component {
   render(){
     const { t } = this.props;
     return (
-      <div className='contact'>
-    <div className="card">
-    <div className="img">
-      <img className='img'
+      <div className=''>
+    <div className=" grid-cols-1 text-center mx-20 mt-8 ">
+    <div className="">
+      <img className='h-80 rounded-md'
         src={img} 
         alt='avatar'
         />

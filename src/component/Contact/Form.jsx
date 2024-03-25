@@ -58,25 +58,25 @@ class Form extends Component {
     const { email, name, message,errors  } = this.state;
 
     return (
-      <div className='contact'>
-      <div className="form-container">
+      <div className=''>
+      <div className="form-container mt-10">
         <form className="form" onSubmit={this.handleSubmit}>
-          <div className="form-group">
+          <div className=" mt-2">
             <label htmlFor="name">{t('Form:name')}</label>
-            <input type="text" id="name" name="name" required value={name} onChange={(e) => this.setState({ name: e.target.value })} />
+            <input className="ml-4 rounded-xl " type="text" id="name" name="name" required value={name} onChange={(e) => this.setState({ name: e.target.value })} />
             <p className="error-message">{errors.name}</p> {/* Muestra errores de validación */}
           </div>
-          <div className="form-group">
+          <div className="mt-2">
             <label htmlFor="email">{t('Form:email')}</label>
-            <input type="text" id="email" name="email" required value={email} onChange={(e) => this.setState({ email: e.target.value })} />
+            <input className="ml-7  rounded-xl" type="text" id="email" name="email" required value={email} onChange={(e) => this.setState({ email: e.target.value })} />
             <p className="error-message">{errors.email}</p> {/* Muestra errores de validación */}
           </div>
-          <div className="form-group">
-            <label htmlFor="textarea">{t('Form:description')}</label>
-            <textarea name="message" id="textarea" rows="10" cols="50" required value={message} onChange={(e) => this.setState({ message: e.target.value })}></textarea>
+          <div className="mt-2">
+            <label htmlFor="textarea">{t('Form:description')}</label> <br />
+            <textarea className="rounded-xl my-2" name="message" id="textarea" rows="10" cols="50" required value={message} onChange={(e) => this.setState({ message: e.target.value })}></textarea>
             <p className="error-message">{errors.message}</p> {/* Muestra errores de validación */}
           </div>
-          <button className="form-submit-btn" type="submit">{t('Form:submit')}</button>
+          <button className="px-4 my-2 bg-slate-500 rounded-md hover:animate-bounce hover:text-xl " type="submit">{t('Form:submit')}</button>
         </form>
       </div>
     </div>

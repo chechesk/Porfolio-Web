@@ -23,24 +23,24 @@ const CardModel = ({ id, nombre, descripcion, imagen, point, tecnologies }) => {
   };
 
   return (
-    <section className="mx-[5%] ">
+    <section className="mx-[10%] ">
       <article>
-        <div className=" my-4 justify-center  w-[480px] ">
-          <div className=" bg-slate-800 transition-opacit shadow-xl rounded-xl px-8 h-[450px]">
+        <div className=" my-4 justify-center  w-[400px] ">
+          <div className=" bg-slate-800 transition-opacit shadow-xl rounded-xl px-8 h-[480px]">
             <h2 className="text-center py-2">{nombre}</h2>
           <figure>
-            <img src={imagen} alt="img-card" className="my-2 w-[490px] h-[200px]" />
+            <img src={imagen} alt="img-card" className=" mx-fill my-2 w-[350px] h-[200px]" />
           </figure>
             <p className="article-info text-justify h-[100px]"> {descripcion} </p>
-            <p className="article-tec my-1 h-[40px] ">
+            <p className="article-tec my-3 h-[40px] mb-4">
               {t("technologies:title")}:{" "}
               {tecnologies
                 .map((tech) => tech.nombre)
                 .slice(0, 5)
                 .join(", ")}
             </p>
-            <a href="#" className=" bg-zinc-700 text-white p-1 rounded-xl">
-              Read more
+            <a href="#" className=" bg-zinc-700 text-white px-1 py-1 rounded-xl"> Read more  </a>
+             
               {/* <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="icon"
@@ -53,7 +53,7 @@ const CardModel = ({ id, nombre, descripcion, imagen, point, tecnologies }) => {
                   clipRule="evenodd"
                 />
               </svg> */}
-            </a>
+           
             {/* <div className="rating">{generateStars(point)}</div> */}
           </div>
         </div>

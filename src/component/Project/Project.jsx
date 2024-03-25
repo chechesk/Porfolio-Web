@@ -7,8 +7,8 @@ import { withTranslation } from 'react-i18next'
 const Project = ({t}) => {
  
     return (
-     <div className='containers'>
-     <h2>{t('projects:title')}</h2>
+     <div className='containers overflow-x-auto mx-[10%]'>
+     {/* <h2>{t('projects:title')}</h2> */}
         <div className='containers-project'>
      <Cards/>
      </div>

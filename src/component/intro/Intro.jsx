@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import img from "../../assets/1684808450050.jpeg";
+import intro from './img-intro'
 import Social from "../Social/social";
 import "./intro.css";
+import Img_intro from "./img-intro";
 
 export default class Intro extends Component {
   render() {
     return (
-          <div className="grid grid-cols-1 md:grid-cols-2 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 my-40">
             <div className=" place-self-center">
               
                 <h2 className="text-center text-2xl font-bold my-4">
@@ -16,10 +18,10 @@ export default class Intro extends Component {
                   Full Stack Developer
                 </h2>
               
-                  <div className=" flex justify-center my-4">
+                  <div className=" flex justify-center my-4 ">
                   <img
                   src="https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_plain_wordmark_logo_icon_146423.png"
-                  className="w-[80px] h-[80px]  mx-4 "
+                  className="w-[80px] h-[80px]  mx-4  "
                   alt="Mongo"
                 />
                 <img
@@ -29,7 +31,7 @@ export default class Intro extends Component {
                 />
                 <img
                   src="https://www.cyberzon3.com/img/React.png"
-                  className="w-[80px] h-[80px]  mx-4 gap-x-4 hover:shadow-lg hover:fill-current transition duration-300"
+                  className="w-[80px] h-[80px]  mx-4 gap-x-4 drop-shadow-xl"
                   alt="React"
                 />
                 <img
@@ -40,16 +42,14 @@ export default class Intro extends Component {
                   </div>
            <div className="flex justify-center my-4">
                 <Social />
+              
            </div>
        
             </div>
 
             <div className="icones flex justify-center">
-              <img
-                className=" h-[490px] w-[600px] rounded-xl"
-                src="https://www.amd.com/content/dam/amd/en/images/abstract/648568-developer-code.jpg"
-                alt="Imagen"
-              />
+            <Img_intro/>
+           
               
             </div>
           </div>

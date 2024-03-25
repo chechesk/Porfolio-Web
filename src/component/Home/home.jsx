@@ -25,11 +25,12 @@ export default class home extends Component {
         <Skill />
       </Fade>
      <Fade triggerOnce={true}>
+        {/* <h2>{t('projects:title')}</h2> */}
         <Project />
       </Fade>
-      {/* <Fade triggerOnce={true}>
+      <Fade triggerOnce={true}>
         <Footer />
-      </Fade> */}
+      </Fade>
     </div>
     )
   }
