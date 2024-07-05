@@ -11,7 +11,7 @@ const skillsData= [
   {
     id:"2",
     name: 'Express',
-    image: 'https://www.cyberzon3.com/img/express.png',
+    image: 'https://gruporf.cl/img/express.png',
     description_cut: 'Framework de Node.js para construir aplicaciones web',
     description: 'Express es un framework de Node.js que simplifica la creación de aplicaciones web y API. Proporciona una serie de funciones y herramientas para manejar rutas, peticiones y respuestas de manera eficiente. Express es ampliamente utilizado en el desarrollo de aplicaciones web y API con Node.js debido a su simplicidad y flexibilidad.',
     level: 60,
@@ -20,7 +20,7 @@ const skillsData= [
   {
     id:"3",
     name: 'ReactJS',
-    image: 'https://www.cyberzon3.com/img/React.png',
+    image: 'https://gruporf.cl/img/React.png',
     description_cut: 'Biblioteca de JavaScript para construir interfaces de usuario',
     description: 'ReactJS es una biblioteca de JavaScript desarrollada por Facebook que se utiliza para construir interfaces de usuario interactivas y reactivas. Se basa en componentes reutilizables que facilitan la creación de aplicaciones web modernas y eficientes. React se utiliza comúnmente en el desarrollo de aplicaciones de una sola página (SPA) y se integra bien con otras tecnologías y bibliotecas.',
     level: 75,
@@ -47,7 +47,7 @@ const skillsData= [
   {
     id:"6",
     name: 'Wordpress',
-    image: 'https://www.cyberzon3.com/img/wordpress.png',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/9/93/Wordpress_Blue_logo.png',
     description_cut: 'Plataforma de gestión de contenido (CMS)',
     description: 'Wordpress es una plataforma de gestión de contenido (CMS) que permite crear y administrar sitios web de manera sencilla y versátil. Es ampliamente utilizado para blogs, sitios web corporativos, tiendas en línea y más. Ofrece una gran cantidad de complementos y temas para personalizar y extender las funcionalidades del sitio.',
     level: 80,
@@ -56,7 +56,7 @@ const skillsData= [
   {
     id:"7",
     name: 'Docker',
-    image: 'https://www.cyberzon3.com/img/docker-Logo.png',
+    image: 'https://gruporf.cl/img/docker-Logo.png',
     description_cut: 'El sistema de software de TI llamado "Docker" es la tecnología de organización en contenedores que posibilita la creación y el uso de los contenedores de Linux®.',
     description: 'Con Docker, puede utilizar los contenedores como máquinas virtuales muy livianas y modulares, y obtiene la flexibilidad necesaria para crearlos, implementarlos, copiarlos y trasladarlos de un entorno a otro, lo cual le permite optimizar las aplicaciones para la nube.',
     level: 80,
@@ -64,8 +64,8 @@ const skillsData= [
   },
   {
     id:"8",
-    name: 'Amazon Web Services',
-    image: 'https://www.cyberzon3.com/img/aws.png',
+    name: 'Amazon Data Center',
+    image: 'https://gruporf.cl/img/aws.png',
     description_cut: 'AWS Servicios: Software de infraestructura, DevOps, Machine Learning.',
     description: 'Brindan almacenamiento, redes, bases de datos, servicios de aplicaciones web y móviles, seguridad, potencia de cómputo, mensajería, inteligencia artificial, identidad y conformidad.',
     level: 80,

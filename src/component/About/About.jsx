@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { withTranslation } from "react-i18next";
+import express from '../../assets/express.png'
+import react from '../../assets/React.png'
 import "./About.css";
 
 class About extends Component {
@@ -16,12 +18,12 @@ class About extends Component {
               alt="Mongo"
             />
             <img
-              src="https://www.cyberzon3.com/img/express.png"
+              src={express}
               className="w-[80px] h-[80px]   m-16"
               alt="Express"
             />
             <img
-              src="https://www.cyberzon3.com/img/React.png"
+              src={react}
               className="w-[80px] h-[80px]   m-16"
               alt="React"
             />
@@ -68,9 +70,9 @@ class About extends Component {
                       <li className="text-black dark:text-black">MongoDB</li>
                       <li className="text-black dark:text-black">Sequelize</li>
                       <li className="text-black dark:text-black">Git / GitHub</li>
-                      <li className="text-black dark:text-black"></li>
-                      <li className="text-black dark:text-black"></li>
-                    
+                      <li className="text-black dark:text-black">MySql</li>
+                      <li className="text-black dark:text-black">Microservicios</li>
+                      <li className="text-black dark:text-black">Javascript</li>
                     </ul>
                   </td>
                   <td className="px-6 py-4 whitespace-no-wrap">
@@ -82,6 +84,7 @@ class About extends Component {
                       <li className="text-black dark:text-black">CSS puro</li>
                       <li className="text-black dark:text-black">Material UI</li>
                       <li className="text-black dark:text-black">Chakra UI</li>
+                      <li className="text-black dark:text-black">Tremor UI</li>
                       <li className="text-black dark:text-black">Git / GitHub</li>
                     </ul>
                   </td>

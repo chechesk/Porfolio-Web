@@ -4,6 +4,8 @@ import intro from './img-intro'
 import Social from "../Social/social";
 import "./intro.css";
 import Img_intro from "./img-intro";
+import express from '../../assets/express.png'
+import react from '../../assets/React.png'
 
 export default class Intro extends Component {
   render() {
@@ -25,12 +27,12 @@ export default class Intro extends Component {
                   alt="Mongo"
                 />
                 <img
-                  src="https://www.cyberzon3.com/img/express.png"
+                  src={express}
                   className="w-[80px] h-[80px]  mx-4 gap-x-4 "
                   alt="Express"
                 />
                 <img
-                  src="https://www.cyberzon3.com/img/React.png"
+                  src={react}
                   className="w-[80px] h-[80px]  mx-4 gap-x-4 drop-shadow-xl"
                   alt="React"
                 />

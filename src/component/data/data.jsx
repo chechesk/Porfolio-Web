@@ -16,7 +16,7 @@ const cardsData  = [
       id: 2,
       nombre: 'Pi Food',
       descripcion: ' apply the technologies learned in the bootcamps with nodejs, express, react, redux, sequelize, css.',
-      imagen: "https://cyberzon3.com/img/Pi-Food.png",
+      imagen: "https://gruporf.cl/img/Pi-Food.png",
       URL: "https://localhost",
       point: '5',
       tecnologies: [
@@ -32,7 +32,7 @@ const cardsData  = [
       id: 3,
       nombre: 'Cyberzon3',
       descripcion: 'travel e-commerce integration project.',
-      imagen: "https://cyberzon3.com/img/Pf-Cyberzon3.png",
+      imagen: "https://gruporf.cl/img/Pf-Cyberzon3.png",
       URL: "https://www.cyberzon3.com",
       point: '5',
       tecnologies: [
@@ -64,7 +64,7 @@ const cardsData  = [
     id: 5,
     nombre: 'Wordpress CGSEVENTS',
     descripcion: 'event development company in Cacino and Metaverses, with the standards of the regulatory federation',
-    imagen: " https://cgsevents.io/wp-content/uploads/2023/08/portada.jpeg",
+    imagen: " https://gruporf.cl/img/Portada.png",
     URL: "http://www.cgsevents.io",
     point: '5',
     tecnologies: [
@@ -78,7 +78,7 @@ const cardsData  = [
     id: 6,
     nombre: 'Wordpress H2-LATAMSUMMIT',
     descripcion: 'event development company in Cacino and Metaverses, with the standards of the regulatory federation',
-    imagen: " https://cyberzon3.com/img/h2-latam.png",
+    imagen: " https://gruporf.cl/img/h2-latam.png",
     URL: "https://h2-latamsummit.com/",
     point: '5',
     tecnologies: [
@@ -92,7 +92,7 @@ const cardsData  = [
     id: 7,
     nombre: 'Wordpress PERGLODI',
     descripcion: 'We give a personality to your business and entrepreneurship through a concept or idea that you have dreamed of or thought about at some point.',
-    imagen: " https://cyberzon3.com/img/perglodi.png",
+    imagen: " https://gruporf.cl/img/perglodi.png",
     URL: "https://perglodi.cl/",
     point: '5',
     tecnologies: [
@@ -106,7 +106,7 @@ const cardsData  = [
     id: 8,
     nombre: 'Wordpress CGSBRASIL',
     descripcion: 'We give a personality to your business and entrepreneurship through a concept or idea that you have dreamed of or thought about at some point.',
-    imagen: " https://cyberzon3.com/img/CgsBrasil.png",
+    imagen: " https://gruporf.cl/img/CgsBrasil.png",
     URL: "https://cgsbrasil.com/",
     point: '5',
     tecnologies: [
@@ -120,7 +120,7 @@ const cardsData  = [
     id: 9,
     nombre: 'Quantum',
     descripcion: 'Optimización, Digitalización y Automatizaciones de Portafolios de Inversión con Inteligencia Artificial',
-    imagen: " https://cyberzon3.com/img/Quantum.png",
+    imagen: " https://gruporf.cl/img/Quantum.png",
     URL: "https://dashboard.quantumdassets.com/",
     point: '5',
     tecnologies: [
