@@ -15,31 +15,31 @@
       "title": "Projects"
     },
     "project": {
-      "1": {
-        "name": "Wordpress",
-        "description_cut": "Content Management System (CMS)",
-        "description": "Wordpress is a content management system (CMS) that allows you to create and manage websites easily and flexibly. It is widely used for blogs, corporate websites, online stores, and more. It offers a wide range of plugins and themes to customize and extend the site\"s functionality."
+      "1": {  
+        "name": "MongoDB",
+        "description_cut": "Document-oriented NoSQL database",
+        "description": "MongoDB is a NoSQL database that stores data in a document-oriented format, such as JSON. It is scalable and flexible, making it suitable for applications that require fast and schema-free data storage. MongoDB is commonly used in web applications, mobile apps, and big data projects."
         },
-    "2":{
+    "2": {
+      "name": "Express",
+      "description_cut": "Node.js framework for building web applications",
+      "description": "Express is a Node.js framework that simplifies the creation of web applications and APIs. It provides a set of functions and tools for handling routes, requests, and responses efficiently. Express"
+    },
+    "3":{
       "name": "ReactJS",
       "description_cut": "JavaScript library for building user interfaces",
       "description": "ReactJS is a JavaScript library developed by Facebook for building interactive and responsive user interfaces. It is based on reusable components that make it easy to create modern and efficient web applications. React is commonly used in the development of single-page applications (SPAs) and integrates well with other technologies and libraries."
        },
-    "3":{  
-      "name": "MongoDB",
-      "description_cut": "Document-oriented NoSQL database",
-      "description": "MongoDB is a NoSQL database that stores data in a document-oriented format, such as JSON. It is scalable and flexible, making it suitable for applications that require fast and schema-free data storage. MongoDB is commonly used in web applications, mobile apps, and big data projects."
-      },
-     "4": {
+     "4":{
       "name": "Nodejs",
       "description_cut": "JavaScript runtime environment on the server side",
       "description": "Node.js is a JavaScript runtime environment that allows you to run JavaScript code on the server side. It is known for its ability to handle multiple connections efficiently, making it suitable for real-time applications, web servers, and APIs. Node.js is built on the Google Chrome V8 engine and is highly popular in modern web application development."
     },
     "5": {
-      "name": "Express",
-      "description_cut": "Node.js framework for building web applications",
-      "description": "Express is a Node.js framework that simplifies the creation of web applications and APIs. It provides a set of functions and tools for handling routes, requests, and responses efficiently. Express"
-    },
+      "name": "JavaScript",
+      "description_cut": "JavaScript is a versatile programming language primarily used to create interactivity on websites.",
+      "description": "JavaScript is a dynamic programming language mainly used in web development to enhance interactivity on web pages. It runs on the client-side, improving user experience without page reloads. Additionally, it's employed on the server-side with Node.js, expanding its functionality in modern applications."
+      },
     "6":{
       "name": "Wordpress",
       "description_cut": "WordPress allows you to manage your website or blog autonomously.",
@@ -133,36 +133,36 @@
       "title": "Proyectos"
     },
     "project":{
-      "1": {
-        "name": "Wordpress",
-        "description_cut": "Plataforma de gestión de contenido (CMS)",
-        "description": "Wordpress es una plataforma de gestión de contenido (CMS) que permite crear y administrar sitios web de manera sencilla y versátil. Es ampliamente utilizado para blogs, sitios web corporativos, tiendas en línea y más. Ofrece una gran cantidad de complementos y temas para personalizar y extender las funcionalidades del sitio."
-         },
-    "2":{
+      "1": {  
+        "name": "MongoDB",
+        "description_cut": "Base de datos NoSQL orientada a documentos",
+        "description": "MongoDB es una base de datos NoSQL que almacena datos en un formato orientado a documentos, como JSON. Es escalable y flexible, lo que lo hace adecuado para aplicaciones que requieren un almacenamiento de datos rápido y sin esquemas rígidos. MongoDB se utiliza comúnmente en aplicaciones web, aplicaciones móviles y proyectos de big data."
+      },
+    "2": {
+      "name": "Express",
+      "description_cut": "Framework de Node.js para construir aplicaciones web",
+      "description": "Express es un framework de Node.js que simplifica la creación de aplicaciones web y API. Proporciona una serie de funciones y herramientas para manejar rutas, peticiones y respuestas de manera eficiente. Express es ampliamente utilizado en el desarrollo de aplicaciones web y API con Node.js debido a su simplicidad y flexibilidad."
+    },
+    "3":{
       "name": "ReactJS",
       "description_cut": "Biblioteca de JavaScript para construir interfaces de usuario",
       "description": "ReactJS es una biblioteca de JavaScript desarrollada por Facebook que se utiliza para construir interfaces de usuario interactivas y reactivas. Se basa en componentes reutilizables que facilitan la creación de aplicaciones web modernas y eficientes. React se utiliza comúnmente en el desarrollo de aplicaciones de una sola página (SPA) y se integra bien con otras tecnologías y bibliotecas."
-    },
-    "3":{  
-      "name": "MongoDB",
-      "description_cut": "Base de datos NoSQL orientada a documentos",
-      "description": "MongoDB es una base de datos NoSQL que almacena datos en un formato orientado a documentos, como JSON. Es escalable y flexible, lo que lo hace adecuado para aplicaciones que requieren un almacenamiento de datos rápido y sin esquemas rígidos. MongoDB se utiliza comúnmente en aplicaciones web, aplicaciones móviles y proyectos de big data."
     },
      "4": {
       "name": "Nodejs",
       "description_cut": "Entorno de tiempo de ejecución de JavaScript en el lado del servidor",
       "description": "Node.js es un entorno de tiempo de ejecución de JavaScript que permite ejecutar código JavaScript en el lado del servidor. Es conocido por su capacidad para manejar múltiples conexiones de manera eficiente, lo que lo hace adecuado para aplicaciones en tiempo real, servidores web y API. Node.js se basa en el motor V8 de Google Chrome y es muy popular en el desarrollo de aplicaciones web modernas."
       },
-    "5": {
-      "name": "Express",
-      "description_cut": "Framework de Node.js para construir aplicaciones web",
-      "description": "Express es un framework de Node.js que simplifica la creación de aplicaciones web y API. Proporciona una serie de funciones y herramientas para manejar rutas, peticiones y respuestas de manera eficiente. Express es ampliamente utilizado en el desarrollo de aplicaciones web y API con Node.js debido a su simplicidad y flexibilidad."
-    },
-    "6":{
+    "5":{
       "name": "JavaScript",
-      "description_cut": "WordPress te permite gestionar tu sitio web o blog de forma autónoma.",
-      "description": "Es sistema de base de datos que permite a los usuarios añadir, modificar y organizar, temas, plugins y otros tipos de contenido. Cada propietario de un sitio web de WordPress puede acceder al panel de control para gestionar su sitio desde un único lugar."
+      "description_cut": "JavaScript es un lenguaje de programación versátil que se utiliza principalmente para crear interactividad en sitios web.",
+      "description": "JavaScript es un lenguaje de programación dinámico, utilizado principalmente en desarrollo web para hacer páginas más interactivas. Se ejecuta en el cliente, mejorando la experiencia de usuario sin recargas. También se usa en servidor con Node.js, ampliando su funcionalidad en aplicaciones modernas."
      },
+    "6":{
+      "name": "Wordpress",
+      "description_cut": "Plataforma de gestión de contenido (CMS)",
+      "description": "Wordpress es una plataforma de gestión de contenido (CMS) que permite crear y administrar sitios web de manera sencilla y versátil. Es ampliamente utilizado para blogs, sitios web corporativos, tiendas en línea y más. Ofrece una gran cantidad de complementos y temas para personalizar y extender las funcionalidades del sitio."
+       }, 
      "7":{
       "name": "Docker",
       "description_cut": "Sofware TI llamado Docker es la tecnología de organización en contenedores de Linux®.",

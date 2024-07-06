@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
 import { useDarkMode } from '../Config/DarkZone';
-import LanguageSwitcher from '../Config/LanguageSwitcher'
-import BotonDZ from '../Config/DarkZoneSwitch'
+import LanguageSwitcher from '../Config/LanguageSwitcher';
+import BotonDZ from '../Config/DarkZoneSwitch';
 
 const Nav = ({ t }) => {
   const { isDarkMode } = useDarkMode();
@@ -18,27 +17,25 @@ const Nav = ({ t }) => {
     setIsNavOpen(false);
   };
 
-  // Agregar un event listener para controlar el scroll y actualizar el estado 'isSticky'
+  const handleScrollTo = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      closeNav();
+    }
+  };
+
   useEffect(() => {
     let timer;
-    
     const handleScroll = () => {
       clearTimeout(timer);
       timer = setTimeout(() => {
-        if (window.scrollY > 0) {
-          setIsSticky(true);
-        } else {
-          setIsSticky(false);
-        }
-      }, 100); // Espera 100 milisegundos después del último evento de scroll para actualizar la clase.
+        setIsSticky(window.scrollY > 0);
+      }, 100);
     };
 
     window.addEventListener('scroll', handleScroll);
-
-    // Remover el event listener al desmontar el componente
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
@@ -59,23 +56,23 @@ const Nav = ({ t }) => {
         </button>
       </div>
 
-      <div className={`hidden md:block  ${isNavOpen ? 'block' : 'hidden'}`} alt="Nav">
+      <div className={`hidden md:block ${isNavOpen ? 'block' : 'hidden'}`} alt="Nav">
         <ul className="flex flex-col md:flex-row text-center mt-2 md:mt-0">
           <li className='h-[40px] pt-3 text-center w-[140px] text-sm md:text-2xl'>
-            <Link to="/" onClick={closeNav} className='text-center Link'>{t('navbar:home')}</Link>
+            <a href="#home" onClick={() => handleScrollTo('home')} className='text-center'>{t('navbar:home')}</a>
           </li>
           <li className='text-center pt-3 gap-x-4 w-[140px] text-sm md:text-2xl'>
-            <Link to="/about" className='text-center whitespace-nowrap font-Robot' onClick={closeNav}>{t('navbar:about')}</Link>
+            <a href="#about" onClick={() => handleScrollTo('about')} className='text-center'>{t('navbar:about')}</a>
           </li>
           <li className='text-center pt-3 gap-x-4 w-[140px] text-sm md:text-2xl'>
-            <Link to="/skills" className='text-center' onClick={closeNav}>{t('navbar:skill')}</Link>
+            <a href="#skills" onClick={() => handleScrollTo('skills')} className='text-center'>{t('navbar:skill')}</a>
           </li>
           <li className='text-center pt-3 gap-x-4 w-[140px] text-sm md:text-2xl'>
-            <Link to="/projects" className='text-center' onClick={closeNav}>{t('navbar:projects')}</Link>
+            <a href="#projects" onClick={() => handleScrollTo('projects')} className='text-center'>{t('navbar:projects')}</a>
           </li>
-          <li className='text-center pt-3 gap-x-4 w-[140px] text-sm md:text-2xl'>
-            <Link to="/contact" className='text-center' onClick={closeNav}>{t('navbar:contact')}</Link>
-          </li>
+          {/* <li className='text-center pt-3 gap-x-4 w-[140px] text-sm md:text-2xl'>
+            <a href="#contact" onClick={() => handleScrollTo('contact')} className='text-center'>{t('navbar:contact')}</a>
+          </li> */}
         </ul>
       </div>
       
@@ -93,24 +90,24 @@ const Nav = ({ t }) => {
         <div className="md:hidden w-full">
           <ul className="flex flex-col text-center mt-2">
             <li className='pt-3'>
-              <Link to="/" onClick={closeNav} className='text-center Link'>{t('navbar:home')}</Link>
+              <a href="#home" onClick={() => handleScrollTo('home')} className='text-center'>{t('navbar:home')}</a>
             </li>
             <li className='pt-3'>
-              <Link to="/about" className='text-center whitespace-nowrap font-Robot' onClick={closeNav}>{t('navbar:about')}</Link>
+              <a href="#about" onClick={() => handleScrollTo('about')} className='text-center'>{t('navbar:about')}</a>
             </li>
             <li className='pt-3'>
-              <Link to="/skills" className='text-center' onClick={closeNav}>{t('navbar:skill')}</Link>
+              <a href="#skills" onClick={() => handleScrollTo('skills')} className='text-center'>{t('navbar:skill')}</a>
             </li>
             <li className='pt-3'>
-              <Link to="/projects" className='text-center' onClick={closeNav}>{t('navbar:projects')}</Link>
+              <a href="#projects" onClick={() => handleScrollTo('projects')} className='text-center'>{t('navbar:projects')}</a>
             </li>
-            <li className='pt-3'>
-              <Link to="/contact" className='text-center' onClick={closeNav}>{t('navbar:contact')}</Link>
-            </li>
+            {/* <li className='pt-3'>
+              <a href="#contact" onClick={() => handleScrollTo('contact')} className='text-center'>{t('navbar:contact')}</a>
+            </li> */}
             <li className='pt-3'>
               <LanguageSwitcher/>
             </li>
-            <li className='pt-3  '>
+            <li className='pt-3'>
               <BotonDZ/>
             </li>
           </ul>
