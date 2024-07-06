@@ -36,7 +36,7 @@ export default function Cards() {
               className="card-link"
             >
               <CardModel
-                className=""
+                className="text-white dark:text-white"
                 key={card.id}
                 id={card.id}
                 nombre={t(`cards:${card.id}.nombre`)}

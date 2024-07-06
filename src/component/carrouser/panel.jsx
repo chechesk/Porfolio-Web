@@ -45,7 +45,7 @@ const Carousel = () => {
         {technologies.map((tech) => (
           <div key={tech.id} className='w-[40px]'>
             <h3 className='ml-2 hidden'>{tech.nombre}</h3>
-            <img className='items-center h-[80px]'
+            <img className='items-center h-[40px] md:h-[80px]'
               src={tech.imagen}
               alt={tech.nombre}
             />

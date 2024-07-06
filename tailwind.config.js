@@ -6,7 +6,11 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'custom-range': {'min': '393px', 'max': '480px'},
+      }
+    },
   },
   plugins: [],
 }

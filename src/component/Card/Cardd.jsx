@@ -31,8 +31,8 @@ const CardModel = ({ id, nombre, descripcion, imagen, point, tecnologies }) => {
           <figure>
             <img src={imagen} alt="img-card" className=" mx-fill my-2 w-[350px] h-[200px]" />
           </figure>
-            <p className="article-info text-justify h-[100px]"> {descripcion} </p>
-            <p className="article-tec my-3 h-[40px] mb-4">
+            <p className="article-info text-justify h-[100px] text-white"> {descripcion} </p>
+            <p className="article-tec my-3 h-[40px] mb-4 text-white">
               {t("technologies:title")}:{" "}
               {tecnologies
                 .map((tech) => tech.nombre)

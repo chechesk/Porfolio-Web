@@ -1,0 +1,22 @@
+.containers {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.containers::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari, Opera */
+}
+
+.button {
+    background: #fff;
+    border: 1px solid #ccc;
+    color: #333;
+    font-size: 24px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #eee;
+}
