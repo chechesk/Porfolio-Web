@@ -31,7 +31,7 @@ const BotonDZ = () => {
 
     return (
         <div>
-            <label className="ui-switch ">
+            <label className="ui-switch  ">
                 <input
                     type="checkbox"
                     checked={isDarkMode}

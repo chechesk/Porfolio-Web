@@ -1,3 +1,4 @@
+import React from 'react';
 import img from "../../assets/istockphoto-1882165385-612x612.jpg";
 import './login.css'
 
@@ -29,70 +30,28 @@ export default function Login() {
   };
 
   return (
-    <div className="">
-      <div className="containerRegister">
-        <div>
-          Img
-        </div>
-        <div>
-          Form
-        </div>
-      </div>
-      <div className="containerLogin">
-      {/* left */}
-      <div className="left">
+    <div className="min-h-screen flex items-center justify-center w-full dark:bg-gray-950">
+      <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg px-8 py-6 max-w-md">
+        <h1 className="text-2xl font-bold text-center mb-4 dark:text-gray-200">Welcome Back!</h1>
         <form onSubmit={handleSubmit}>
-          {/* <p className="P">Login</p> */}
-          <div className="">
-            <label className="label" htmlFor="email">
-              Email:
-            </label>
-            <br />
-            <input
-              className="input"
-              type="text"
-              id="email"
-              name="email"
-              autoComplete="email"
-              required
-            />
-            <br />
+          <div className="mb-4">
+            <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Email Address</label>
+            <input type="email" name="email" id="email" className="shadow-sm rounded-md w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="your@email.com" required />
           </div>
-          <div className="">
-            <label className="label" htmlFor="password">
-              Password:
-            </label>
-            <br />
-            <input
-              className="input"
-              type="password"
-              id="password"
-              name="password"
-              required
-              autoComplete="current-password"
-            />
-            <br />
+          <div className="mb-4">
+            <label htmlFor="password" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Password</label>
+            <input type="password" name="password" id="password" className="shadow-sm rounded-md w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="Enter your password" required />
+            <a href="#" className="text-xs text-gray-600 hover:text-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Forgot Password?</a>
           </div>
-          <button className="button" type="submit">
-            Submit
-          </button>
+          <div className="flex items-center justify-between mb-4">
+            <div className="flex items-center">
+              <input type="checkbox" id="remember" className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 focus:outline-none" />
+              <label htmlFor="remember" className="ml-2 block text-sm text-gray-700 dark:text-gray-300">Remember me</label>
+            </div>
+            <a href="#" className="text-xs text-indigo-500 hover:text-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Create Account</a>
+          </div>
+          <button type="submit" className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Login</button>
         </form>
-      </div>
-      {/* Right */}
-      <div className="right">
-        <div className="">
-          <div className="">
-            <span className="">
-              Control de Usuario
-            </span>
-          </div>
-          <img
-            className="imgL"
-            src={img}
-            alt="logo"
-          />
-        </div>
-      </div>
       </div>
     </div>
   );

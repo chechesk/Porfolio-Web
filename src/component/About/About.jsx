@@ -60,9 +60,9 @@ class About extends Component {
                   </th>
                 </tr>
               </thead>
-              <tbody class="bg-white divide-y divide-gray-200">
+              <tbody className="bg-white divide-y divide-gray-200">
                 <tr>
-                  <td class="px-6 py-4 whitespace-no-wrap">
+                  <td className="px-6 py-4 whitespace-no-wrap">
                     <ul>
                       <li className="text-black dark:text-black">Node.js</li>
                       <li className="text-black dark:text-black">Express.js</li>

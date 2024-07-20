@@ -1,7 +1,7 @@
 import './App.css'
 import { Helmet } from 'react-helmet'
 import Home from './component/Home/home'
-import { Navigate, Route, Routes } from 'react-router-dom'
+import { Navigate, Route, Routes, useLocation } from 'react-router-dom'
 import About from './component/About/About'
 import Nav from './component/Nav/Nav'
 import Project from './component/Project/Project'
@@ -25,6 +25,12 @@ const isAuthenticated = () => {
   return localStorage.getItem('userData') !== null;
 };
 
+const NavBarWrapper = () => {
+  const location = useLocation();
+  const pathsToShowNav = ['/','/about', '/projects', '/skills', '/contact', '/perfil'];
+
+  return pathsToShowNav.includes(location.pathname) ? <Nav /> : null;
+};
 
 // Componente de enrutamiento protegido
 const ProtectedRoute = ({ path, element: Element }) => {
@@ -43,12 +49,9 @@ function App() {
         <meta property="og:url" content="https://www.cyberzon3.com/img/thumbnail.png" />
       </Helmet>
     <header>
-      <div className='   '>
-
-      
-   
-     <Nav/>
-      </div>
+    <div className='   '>
+            <NavBarWrapper />
+          </div>
     </header>
 
         <Routes>
